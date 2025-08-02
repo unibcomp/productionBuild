@@ -1,0 +1,1 @@
+import{u,a as o}from"./index.BWf0QJJx.js";const s=e=>o.get("/get-setting",{params:e}).then(t=>t.data),g=(e={})=>{const{data:t,isLoading:n,refetch:i}=u({queryKey:["setting",e],queryFn:()=>s(e),enabled:!!(e!=null&&e.user_id),refetchOnWindowFocus:!1});return{data:t==null?void 0:t.data,isLoading:n,refetch:i}};export{g as u};

@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+  ecom:
+    image: nginx:alpine
+    container_name: ecom
+    volumes:
+      - ./ecomFrontend:/usr/share/nginx/html
+    expose:
+      - 80
+  admin:
+    image: nginx:alpine
+    container_name: admin
+    volumes:
+      - ./PayinPayoutAdmin:/usr/share/nginx/html
+    expose:
+      - 80
+  user:
+    image: nginx:alpine
+    container_name: user
+    volumes:
+      - ./payinPayoutUser:/usr/share/nginx/html
+    expose:
+      - 80
+  wrapping:
+    image: nginx:alpine
+    container_name: wrapping
+    volumes:
+      - ./WrappingStudio/build:/usr/share/nginx/html
+    expose:
+      - 80
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - ecom
+      - admin
+      - user
+      - wrapping
