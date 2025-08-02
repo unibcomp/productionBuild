@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   ecom:
     image: nginx:alpine
@@ -7,6 +8,7 @@ services:
       - ./ecomFrontend:/usr/share/nginx/html
     expose:
       - 80
+
   admin:
     image: nginx:alpine
     container_name: admin
@@ -14,13 +16,15 @@ services:
       - ./PayinPayoutAdmin:/usr/share/nginx/html
     expose:
       - 80
+
   user:
     image: nginx:alpine
     container_name: user
     volumes:
-      - ./payinPayoutUser:/usr/share/nginx/html
+      - ./PayinpayoutUser:/usr/share/nginx/html
     expose:
       - 80
+
   wrapping:
     image: nginx:alpine
     container_name: wrapping
@@ -28,11 +32,36 @@ services:
       - ./WrappingStudio/build:/usr/share/nginx/html
     expose:
       - 80
-  nginx:
+  ecom-server:
     build:
-      context: ./nginx
+      context: ../ecomm/server
+    container_name: ecomm-server
+    ports:
+      - "3001:3001"
+    restart: always
+    depends_on:
+      - ecom
+  server:
+    build:
+      context: ../PayinPayout/Backend   # relative to docker-compose.yml
+    container_name: payinpayout-server
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - user
+      - admin
+  nginx:
+    image: nginx:alpine
+    container_name: reverse-proxy
     ports:
       - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ecomFrontend:/var/www/ecom
+      - ./PayinPayoutAdmin:/var/www/admin
+      - ./PayinpayoutUser:/var/www/user
+      - ./WrappingStudio/build:/var/www/wrapping
     depends_on:
       - ecom
       - admin
