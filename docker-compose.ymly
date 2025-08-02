@@ -37,7 +37,7 @@ services:
       context: ../ecomm/server
     container_name: ecomm-server
     ports:
-      - "8000:8000"
+      - "3001:3001"
     restart: always
     depends_on:
       - ecom
