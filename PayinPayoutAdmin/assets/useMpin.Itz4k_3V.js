@@ -1,0 +1,1 @@
+import{k as n,a as e}from"./index.BqcJufwq.js";const i=()=>n({mutationFn:async t=>{const{data:a}=await e.post("/change/mpin",t);return a}}),r=()=>n({mutationFn:async t=>{const{data:a}=await e.post("/verify-mpin/",t);return a}});export{i as a,r as u};
