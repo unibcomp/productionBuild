@@ -1,0 +1,1 @@
+import{k as s,E as n}from"./index.BMza66u8.js";const r=()=>s({mutationFn:async t=>{const{data:a}=await n.post("/request-otp",t);return a}}),e=()=>s({mutationFn:async t=>{const{data:a}=await n.post("/verify-otp",t);return a}}),u=()=>s({mutationFn:async t=>{const{data:a}=await n.post("/forgot-password",t);return a}});export{e as a,u as b,r as u};
