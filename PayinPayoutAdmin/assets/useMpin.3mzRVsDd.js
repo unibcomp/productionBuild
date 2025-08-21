@@ -1,0 +1,1 @@
+import{b as a,c as e}from"./index.Ct2vEYE0.js";const i=()=>a({mutationFn:async t=>{const{data:n}=await e.post("/change/mpin",t);return n}}),r=()=>a({mutationFn:async t=>{const{data:n}=await e.post("/verify-mpin/",t);return n}});export{i as a,r as u};
