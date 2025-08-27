@@ -1,0 +1,1 @@
+import{h as t,i as n,k as u}from"./index.DG_WvTOT.js";const i=()=>{const e=t();return n({mutationFn:async s=>(await u.post("/user/delete-and-suspend-user",s)).data,mutationKey:["delete-and-suspend-user"],onSuccess:()=>{e.invalidateQueries({queryKey:["Allusers"]})}})};export{i as u};
