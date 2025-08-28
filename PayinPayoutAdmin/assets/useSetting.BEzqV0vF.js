@@ -1,0 +1,1 @@
+import{h as o,l as u}from"./index.BvmzF7-c.js";const s=e=>u.get("/get-setting",{params:e}).then(t=>t.data),g=(e={})=>{const{data:t,isLoading:n,refetch:i}=o({queryKey:["setting",e],queryFn:()=>s(e),enabled:!!(e!=null&&e.user_id),refetchOnWindowFocus:!1});return{data:t==null?void 0:t.data,isLoading:n,refetch:i}};export{g as u};
