@@ -1,0 +1,1 @@
+import{i as t,k as n,l as u}from"./index.Bweg_k96.js";const i=()=>{const e=t();return n({mutationFn:async s=>(await u.post("/user/delete-and-suspend-user",s)).data,mutationKey:["delete-and-suspend-user"],onSuccess:()=>{e.invalidateQueries({queryKey:["Allusers"]})}})};export{i as u};
