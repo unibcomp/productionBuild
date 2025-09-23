@@ -83,15 +83,15 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./ecomFrontend:/var/www/ecom
-      - ./PayinPayoutAdmin:/var/www/admin
-      - ./PayinpayoutUser:/var/www/user
-      - ./WrappingStudio/build:/var/www/wrapping
-      - ../dev/PayinPayout/User/build:/var/www/devuser
-      - ../dev/PayinPayout/Admin/build:/var/www/devadmin
+      # - ./PayinPayoutAdmin:/var/www/admin
+      # - ./PayinpayoutUser:/var/www/user
+      # - ./WrappingStudio/build:/var/www/wrapping
+      # - ../dev/PayinPayout/User/build:/var/www/devuser
+      # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
     depends_on:
       - ecom
-      - admin
-      - user
-      - wrapping
-      - devuser
-      - devadmin
+      # - admin
+      # - user
+      # - wrapping
+      # - devuser
+      # - devadmin
