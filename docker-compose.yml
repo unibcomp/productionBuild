@@ -9,35 +9,35 @@ services:
     expose:
       - 80
 
-  admin:
-    image: nginx:alpine
-    container_name: admin
-    volumes:
-      - ./PayinPayoutAdmin:/usr/share/nginx/html
-    expose:
-      - 80
+  # admin:
+  #   image: nginx:alpine
+  #   container_name: admin
+  #   volumes:
+  #     - ./PayinPayoutAdmin:/usr/share/nginx/html
+  #   expose:
+  #     - 80
 
-  user:
-    image: nginx:alpine
-    container_name: user
-    volumes:
-      - ./PayinpayoutUser:/usr/share/nginx/html
-    expose:
-      - 80
-  devuser:
-    image: nginx:alpine
-    container_name: devuser
-    volumes:
-      - ../dev/PayinPayout/User/build:/usr/share/nginx/html
-    expose:
-      - 80
-  devadmin:
-    image: nginx:alpine
-    container_name: devadmin
-    volumes:
-      - ../dev/PayinPayout/Admin/build:/usr/share/nginx/html
-    expose:
-      - 80
+  # user:
+  #   image: nginx:alpine
+  #   container_name: user
+  #   volumes:
+  #     - ./PayinpayoutUser:/usr/share/nginx/html
+  #   expose:
+  #     - 80
+  # devuser:
+  #   image: nginx:alpine
+  #   container_name: devuser
+  #   volumes:
+  #     - ../dev/PayinPayout/User/build:/usr/share/nginx/html
+  #   expose:
+  #     - 80
+  # devadmin:
+  #   image: nginx:alpine
+  #   container_name: devadmin
+  #   volumes:
+  #     - ../dev/PayinPayout/Admin/build:/usr/share/nginx/html
+  #   expose:
+  #     - 80
 
   wrapping:
     image: nginx:alpine
@@ -55,26 +55,26 @@ services:
     restart: always
     depends_on:
       - ecom
-  server:
-    build:
-      context: ../PayinPayout/Backend   # relative to docker-compose.yml
-    container_name: payinpayout-server
-    ports:
-      - "3000:3000"
-    restart: always
-    depends_on:
-      - user
-      - admin
-  dev-server:
-    build:
-      context: ../dev/PayinPayout/Backend  
-    container_name: devpayinpayout-server
-    ports:
-      - "3001:3000"
-    restart: always
-    depends_on:
-      - devuser
-      - devadmin
+  # server:
+  #   build:
+  #     context: ../PayinPayout/Backend   # relative to docker-compose.yml
+  #   container_name: payinpayout-server
+  #   ports:
+  #     - "3000:3000"
+  #   restart: always
+  #   depends_on:
+  #     - user
+  #     - admin
+  # dev-server:
+  #   build:
+  #     context: ../dev/PayinPayout/Backend  
+  #   container_name: devpayinpayout-server
+  #   ports:
+  #     - "3001:3000"
+  #   restart: always
+  #   depends_on:
+  #     - devuser
+  #     - devadmin
   nginx:
     image: nginx:alpine
     container_name: reverse-proxy
