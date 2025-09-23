@@ -39,13 +39,13 @@ services:
   #   expose:
   #     - 80
 
-  wrapping:
-    image: nginx:alpine
-    container_name: wrapping
-    volumes:
-      - ./WrappingStudio/build:/usr/share/nginx/html
-    expose:
-      - 80
+  # wrapping:
+  #   image: nginx:alpine
+  #   container_name: wrapping
+  #   volumes:
+  #     - ./WrappingStudio/build:/usr/share/nginx/html
+  #   expose:
+  #     - 80
   ecom-server:
     build:
       context: ../ecomm/server
