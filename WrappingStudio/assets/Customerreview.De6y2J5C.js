@@ -1,0 +1,1 @@
+import{j as e}from"./index.CcjL_5p2.js";const t=()=>e.jsxs(e.Fragment,{children:[e.jsx("h1",{className:"  text-center text-4xl p-5",children:"Customer Reviews"}),e.jsxs("p",{className:"p-4 text-sm",children:["See what our customers are saying about",e.jsx("span",{className:"text-pink-600 font-bold",children:" Wrapping Studio"})," products."]})]});export{t as default};
