@@ -108,6 +108,7 @@ services:
       - ecom
       # - admin
       # - user
-      # - wrapping
+      - wrapping
+      - wrappingvendor
       # - devuser
       # - devadmin
