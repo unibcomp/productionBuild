@@ -39,13 +39,13 @@ services:
   #   expose:
   #     - 80
 
-  # wrapping:
-  #   image: nginx:alpine
-  #   container_name: wrapping
-  #   volumes:
-  #     - ./WrappingStudio/build:/usr/share/nginx/html
-  #   expose:
-  #     - 80
+  wrapping:
+    image: nginx:alpine
+    container_name: wrapping
+    volumes:
+      - ./WrappingStudio/build:/usr/share/nginx/html
+    expose:
+      - 80
   ecom-server:
     build:
       context: ../ecomm/server
@@ -55,6 +55,15 @@ services:
     restart: always
     depends_on:
       - ecom
+  wrapping-server:
+    build:
+      context: ../wrappingstudio/Server
+    container_name: wrapping-server
+    ports:
+      - "3500:3500"
+    restart: always
+    depends_on:
+      - wrapping
   # server:
   #   build:
   #     context: ../PayinPayout/Backend   # relative to docker-compose.yml
