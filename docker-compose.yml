@@ -52,6 +52,13 @@ services:
       - ./WrappingStudio:/usr/share/nginx/html
     expose:
       - 80
+  bankmudrauser:
+    image: nginx:alpine
+    container_name: bankmudrauser
+    volumes:
+      - ./BankMudra:/usr/share/nginx/html
+    expose:
+      - 80
   ecom-server:
     build:
       context: ../ecomm/server
@@ -70,6 +77,15 @@ services:
     restart: always
     depends_on:
       - wrapping
+  bankmudra-server:
+    build:
+      context: ../merchant-backend
+    container_name: bankmudra-server
+    ports:
+      - "4000:4000"
+    restart: always
+    depends_on:
+      - bankmudrauser
   # server:
   #   build:
   #     context: ../PayinPayout/Backend   # relative to docker-compose.yml
@@ -102,6 +118,7 @@ services:
       # - ./PayinPayoutAdmin:/var/www/admin
       # - ./PayinpayoutUser:/var/www/user
       - ./WrappingStudio:/var/www/wrapping
+      - ./BankMudra:/var/www/bankmudra
       # - ../dev/PayinPayout/User/build:/var/www/devuser
       # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
     depends_on:
@@ -110,5 +127,6 @@ services:
       # - user
       - wrapping
       - wrappingvendor
+      - bankmudrauser
       # - devuser
       # - devadmin
