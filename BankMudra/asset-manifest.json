@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.f041472b.css",
-    "main.js": "/static/js/main.060b1521.js",
+    "main.css": "/static/css/main.94345d5c.css",
+    "main.js": "/static/js/main.662a2044.js",
     "static/js/213.95e72210.chunk.js": "/static/js/213.95e72210.chunk.js",
     "static/js/667.c6335310.chunk.js": "/static/js/667.c6335310.chunk.js",
     "static/js/453.30d8b385.chunk.js": "/static/js/453.30d8b385.chunk.js",
+    "static/media/Bank Mudraa Banner.png": "/static/media/Bank Mudraa Banner.e7e6b09e964f512c5c07.png",
     "static/media/banner-1.png": "/static/media/banner-1.18334da150cbd0340c70.png",
     "static/media/banner-3.png": "/static/media/banner-3.a7c8f09b51b9839b38b4.png",
     "static/media/Rectangle 168.png": "/static/media/Rectangle 168.7b3d0c975ff2d209a49c.png",
@@ -28,7 +29,6 @@
     "static/media/services-banner.png": "/static/media/services-banner.498a55b22a7671da55b7.png",
     "static/media/mantra.png": "/static/media/mantra.6c398cd6eba242d3496c.png",
     "static/media/user.jpg": "/static/media/user.7e22a07d099a4189cc34.jpg",
-    "static/media/image 2.jpeg": "/static/media/image 2.a92368b22d7a6ca96f47.jpeg",
     "static/media/startrekl1.png": "/static/media/startrekl1.af847db98c53f9fa33a7.png",
     "static/media/sequgen.png": "/static/media/sequgen.91463d52e65a91c44667.png",
     "static/media/accepted.gif": "/static/media/accepted.af25cc5946e97e0931c1.gif",
@@ -40,6 +40,7 @@
     "static/media/mantral1.png": "/static/media/mantral1.cdc67b4cc75a0d886924.png",
     "static/media/iris.png": "/static/media/iris.7815c2241d235d0e09e7.png",
     "static/media/wholesale-market.svg": "/static/media/wholesale-market.46c464739bc3587aff201855428e541e.svg",
+    "static/media/logo2.png": "/static/media/logo2.029142e0e4703b1d3eaa.png",
     "static/media/CMS.svg": "/static/media/CMS.5f027994d009b52ea1f6d1af6e8e75ee.svg",
     "static/media/flight-booking.svg": "/static/media/flight-booking.be167be1a1fb5b7fb277faacc48db8f4.svg",
     "static/media/side.png": "/static/media/side.2b7f2aacfdf89dfc9c44.png",
@@ -55,16 +56,16 @@
     "static/media/chart.png": "/static/media/chart.828ab402625d98cbdd4a.png",
     "static/media/logo1.png": "/static/media/logo1.074bf856ed8157af23d1.png",
     "static/media/photo-1544620347-c4fd4a3d5957-jpeg-250x250.webp": "/static/media/photo-1544620347-c4fd4a3d5957-jpeg-250x250.a6ead9e733ffd24377ce.webp",
-    "static/media/close.svg": "/static/media/close.d0690aa795f06bb679bfa90bd520bc26.svg",
     "index.html": "/index.html",
-    "main.f041472b.css.map": "/static/css/main.f041472b.css.map",
-    "main.060b1521.js.map": "/static/js/main.060b1521.js.map",
+    "static/media/close.svg": "/static/media/close.d0690aa795f06bb679bfa90bd520bc26.svg",
+    "main.94345d5c.css.map": "/static/css/main.94345d5c.css.map",
+    "main.662a2044.js.map": "/static/js/main.662a2044.js.map",
     "213.95e72210.chunk.js.map": "/static/js/213.95e72210.chunk.js.map",
     "667.c6335310.chunk.js.map": "/static/js/667.c6335310.chunk.js.map",
     "453.30d8b385.chunk.js.map": "/static/js/453.30d8b385.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f041472b.css",
-    "static/js/main.060b1521.js"
+    "static/css/main.94345d5c.css",
+    "static/js/main.662a2044.js"
   ]
 }
