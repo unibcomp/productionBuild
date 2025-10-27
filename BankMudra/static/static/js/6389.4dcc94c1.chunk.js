@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpaymaster=self.webpackChunkpaymaster||[]).push([[6389],{76389:(e,r,s)=>{s.r(r),s.d(r,{default:()=>n});s(8357);var a=s(70579);const n=function(){return(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("div",{className:"ServicesParent"})})}},8357:(e,r,s)=>{s.d(r,{A:()=>n});var a=s(70579);const n=function(){return(0,a.jsx)(a.Fragment,{})}}}]);
-//# sourceMappingURL=6389.4dcc94c1.chunk.js.map
