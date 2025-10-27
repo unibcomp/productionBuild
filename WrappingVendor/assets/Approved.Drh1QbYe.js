@@ -1,0 +1,1 @@
+import{j as t}from"./index.CiDKljiW.js";import o from"./Product.CtXeDBNK.js";import"./usePagination.C-C2FNTU.js";import"./useModal.CuU36cS9.js";import"./x.D_PkhF9k.js";import"./eye.BZPegTrZ.js";import"./PageHeadline.C8ys3j-x.js";const u=()=>t.jsx(o,{status:"APPROVED"});export{u as default};
