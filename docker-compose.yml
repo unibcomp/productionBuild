@@ -35,6 +35,13 @@ services:
   #     - ../dev/PayinPayout/Admin/build:/usr/share/nginx/html
   #   expose:
   #     - 80
+  wrapping:
+    image: nginx:alpine
+    container_name: wrapping
+    volumes:
+      - ./WrappingStudio:/usr/share/nginx/html
+    expose:
+      - 80
   wrappingvendor:
     image: nginx:alpine
     container_name: wrappingvendor
