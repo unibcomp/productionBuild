@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpaymaster=self.webpackChunkpaymaster||[]).push([[9526,9847],{36822:(t,e,a)=>{a.r(e),a.d(e,{default:()=>r});var s=a(73216),n=a(35856),o=a(70579);const r=function t(e){let{component:a,tokenNoti:r,walletData:l,services:i,setProfileData:p,isInstantpaypresnt:u}=e;return window.localStorage.getItem("userIdToken")?(0,o.jsx)(n.default,{tokenNoti:r,walletData:l,PrivateRoute:t,services:i,setProfileData:p,isInstantpaypresnt:u}):(0,o.jsx)(s.C5,{to:"/login-area"})}}}]);
+//# sourceMappingURL=9526.b7733632.chunk.js.map
