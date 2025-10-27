@@ -1,5 +1,3 @@
-
-
 services:
   ecom:
     image: nginx:alpine
@@ -8,7 +6,6 @@ services:
       - ./ecomFrontend:/usr/share/nginx/html
     expose:
       - 80
-
   # admin:
   #   image: nginx:alpine
   #   container_name: admin
@@ -45,11 +42,18 @@ services:
       - ./WrappingVendor:/usr/share/nginx/html
     expose:
       - 80
-  wrapping:
+  newEcomUser:
     image: nginx:alpine
-    container_name: wrapping
+    container_name: newEcomUser
     volumes:
-      - ./WrappingStudio:/usr/share/nginx/html
+      - ./NewEcom/User:/usr/share/nginx/html
+    expose:
+      - 80
+  newEcomVendor:
+    image: nginx:alpine
+    container_name: newEcomVendor
+    volumes:
+      - ./NewEcom/Vendor:/usr/share/nginx/html
     expose:
       - 80
   bankmudrauser:
@@ -119,6 +123,8 @@ services:
       # - ./PayinpayoutUser:/var/www/user
       - ./WrappingStudio:/var/www/wrapping
       - ./BankMudra:/var/www/bankmudra
+      - ./NewEcom/Vendor:/var/www/newEcomVendor
+      - ./NewEcom/User:/var/www/newEcomUser
       # - ../dev/PayinPayout/User/build:/var/www/devuser
       # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
     depends_on:
@@ -128,5 +134,7 @@ services:
       - wrapping
       - wrappingvendor
       - bankmudrauser
+      - newEcomUser
+      - newEcomVendor
       # - devuser
       # - devadmin
