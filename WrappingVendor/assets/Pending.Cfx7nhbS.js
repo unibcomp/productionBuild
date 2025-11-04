@@ -1,0 +1,1 @@
+import{j as t}from"./index.CpL9bG4g.js";import o from"./Product.BepnAn1i.js";import"./usePagination.CfUW7S_2.js";import"./useModal.BHzuJ41m.js";import"./x.D-ur4o1J.js";import"./eye.BFZK6Lkl.js";import"./PageHeadline.DYlK_OD-.js";const n=()=>t.jsx(o,{status:"PENDING"});export{n as default};
