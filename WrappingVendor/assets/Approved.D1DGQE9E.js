@@ -1,0 +1,1 @@
+import{j as t}from"./index.7wMPYj0k.js";import o from"./Product.hiV8O6sn.js";import"./usePagination.CyzX8xiI.js";import"./useModal.-c4pRQZF.js";import"./ConfirmationModal.avbWIqc6.js";import"./x.BHTjl-GE.js";import"./eye.BAI8-N4X.js";import"./PageHeadline.D8LkTmV2.js";const x=()=>t.jsx(o,{status:"APPROVED"});export{x as default};
