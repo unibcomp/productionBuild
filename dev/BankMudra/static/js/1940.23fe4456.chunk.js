@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpaymaster=self.webpackChunkpaymaster||[]).push([[1940],{21940:(e,s,n)=>{n.r(s),n.d(s,{default:()=>t});var r=n(70579);const a=function(){return(0,r.jsx)(r.Fragment,{children:(0,r.jsx)("div",{className:"PageHeading",children:(0,r.jsx)("h1",{children:"Closed Tickets"})})})};const t=function(){return(0,r.jsx)(r.Fragment,{children:(0,r.jsx)(a,{})})}}}]);
+//# sourceMappingURL=1940.23fe4456.chunk.js.map
