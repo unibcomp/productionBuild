@@ -70,6 +70,13 @@ services:
       - ./BankMudra:/usr/share/nginx/html
     expose:
       - 80
+  devbankmudrauser:
+    image: nginx:alpine
+    container_name: devbankmudrauser
+    volumes:
+      - ./dev/BankMudra:/usr/share/nginx/html
+    expose:
+      - 80
   ecom-server:
     build:
       context: ../ecomm/server
@@ -134,6 +141,7 @@ services:
       - ./BankMudra:/var/www/bankmudra
       - ./NewEcom/Vendor:/var/www/newEcomVendor
       - ./NewEcom/User:/var/www/newEcomUser
+      - ./dev/BankMudra:/var/www/devbankmudra
       # - ../dev/PayinPayout/User/build:/var/www/devuser
       # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
     depends_on:
