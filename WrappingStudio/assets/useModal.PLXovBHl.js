@@ -1,0 +1,1 @@
+import{r as o}from"./index.ChAS2J0r.js";const u=()=>{const[t,s]=o.useState({}),[a,l]=o.useState(!1),[n,c]=o.useState();return{isModalOpen:t,openModal:(e,d)=>{s(e),c(d)},closeModal:e=>{console.log(e),s(e),l(!1)},data:n,isImageModelOpen:a}};export{u};
