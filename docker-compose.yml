@@ -124,6 +124,15 @@ services:
   #   depends_on:
   #     - devuser
   #     - devadmin
+  # adminbankmudra
+  bankmudraadmin:
+   image: nginx:alpine
+   container_name: bankmudraadmin
+   volumes:
+    - ./bankmudraadmin:/usr/share/nginx/html   # ✅ Your folder (lowercase)
+   expose:
+    - 80
+
   nginx:
     image: nginx:alpine
     container_name: reverse-proxy
@@ -139,6 +148,7 @@ services:
       # - ./PayinpayoutUser:/var/www/user
       - ./WrappingStudio:/var/www/wrapping
       - ./BankMudra:/var/www/bankmudra
+      - ./bankmudraadmin:/var/www/bankmudraadmin     # ✅ Added here
       - ./NewEcom/Vendor:/var/www/newEcomVendor
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
@@ -151,6 +161,7 @@ services:
       - wrapping
       - wrappingvendor
       - bankmudrauser
+      - bankmudraadmin        # ✅ Add here
       - newEcomUser
       - newEcomVendor
       # - devuser
