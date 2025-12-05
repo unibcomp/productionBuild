@@ -21,20 +21,20 @@ services:
       - ./PayinpayoutUser:/usr/share/nginx/html
     expose:
       - 80
-  # devuser:
-  #   image: nginx:alpine
-  #   container_name: devuser
-  #   volumes:
-  #     - ../dev/PayinPayout/User/build:/usr/share/nginx/html
-  #   expose:
-  #     - 80
-  # devadmin:
-  #   image: nginx:alpine
-  #   container_name: devadmin
-  #   volumes:
-  #     - ../dev/PayinPayout/Admin/build:/usr/share/nginx/html
-  #   expose:
-  #     - 80
+  devuser:
+    image: nginx:alpine
+    container_name: devuser
+    volumes:
+      - ../dev/PayinPayout/User/build:/usr/share/nginx/html
+    expose:
+      - 80
+  devadmin:
+    image: nginx:alpine
+    container_name: devadmin
+    volumes:
+      - ../dev/PayinPayout/Admin/build:/usr/share/nginx/html
+    expose:
+      - 80
   wrapping:
     image: nginx:alpine
     container_name: wrapping
@@ -155,8 +155,8 @@ services:
       - ./NewEcom/Vendor:/var/www/newEcomVendor
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
-      # - ../dev/PayinPayout/User/build:/var/www/devuser
-      # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
+      - ../dev/PayinPayout/User/build:/var/www/devuser
+      - ../dev/PayinPayout/Admin/build:/var/www/devadmin
     depends_on:
       - ecom
       - admin
@@ -167,5 +167,5 @@ services:
       - bankmudraadmin        # ✅ Add here
       - newEcomUser
       - newEcomVendor
-      # - devuser
-      # - devadmin
+      - devuser
+      - devadmin
