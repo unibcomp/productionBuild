@@ -1,0 +1,1 @@
+import{p as n,g as e}from"./index.DXUN4Tyo.js";const o=()=>n({mutationFn:async t=>(await e.post("/mannual-deposit/",t)).data}),s=t=>e.put(`/utr/update/${t.transaction_id}`,t.data).then(a=>a.data),u=()=>({createUpdateUtrMutation:n({mutationFn:s})});export{o as a,u};
