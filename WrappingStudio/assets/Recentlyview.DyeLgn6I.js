@@ -1,1 +1,0 @@
-import{j as e}from"./index.niP8Ywi1.js";const l=()=>(console.log("Recentlyview mounted"),e.jsx(e.Fragment,{children:e.jsxs("div",{className:"my-10 px-4  ",children:[e.jsx("h2",{className:"text-2xl font-bold  mb-6",children:"Recently Viewed Products"}),e.jsx("div",{className:"flex gap-6 overflow-x-auto no-scrollbar"})]})}));export{l as default};
