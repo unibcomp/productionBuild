@@ -1,178 +1,3 @@
-# services:
-#   ecom:
-#     image: nginx:alpine
-#     container_name: ecom
-#     volumes:
-#       - ./ecomFrontend:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   admin:
-#     image: nginx:alpine
-#     container_name: admin
-#     volumes:
-#       - ./PayinPayoutAdmin:/usr/share/nginx/html
-#     expose:
-#       - 80
-  
-#   user:
-#     image: nginx:alpine
-#     container_name: user
-#     volumes:
-#       - ./PayinpayoutUser:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   # devuser:
-#   #   image: nginx:alpine
-#   #   container_name: devuser
-#   #   volumes:
-#   #     - ../dev/PayinPayout/User/build:/usr/share/nginx/html
-#   #   expose:
-#   #     - 80
-#   # devadmin:
-#   #   image: nginx:alpine
-#   #   container_name: devadmin
-#   #   volumes:
-#   #     - ../dev/PayinPayout/Admin/build:/usr/share/nginx/html
-#   #   expose:
-#   #     - 80
-#   wrapping:
-#     image: nginx:alpine
-#     container_name: wrapping
-#     volumes:
-#       - ./WrappingStudio:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   wrappingvendor:
-#     image: nginx:alpine
-#     container_name: wrappingvendor
-#     volumes:
-#       - ./WrappingVendor:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   newEcomUser:
-#     image: nginx:alpine
-#     container_name: newEcomUser
-#     volumes:
-#       - ./NewEcom/User:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   newEcomVendor:
-#     image: nginx:alpine
-#     container_name: newEcomVendor
-#     volumes:
-#       - ./NewEcom/Vendor:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   bankmudrauser:
-#     image: nginx:alpine
-#     container_name: bankmudrauser
-#     volumes:
-#       - ./BankMudra:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   devbankmudrauser:
-#     image: nginx:alpine
-#     container_name: devbankmudrauser
-#     volumes:
-#       - ./dev/BankMudra:/usr/share/nginx/html
-#     expose:
-#       - 80
-#   ecom-server:
-#     build:
-#       context: ../ecomm/server
-#     container_name: ecomm-server
-#     ports:
-#       - "8000:8000"
-#     restart: always
-#     depends_on:
-#       - ecom
-#   wrapping-server:
-#     build:
-#       context: ../wrappingstudio/Server
-#     container_name: wrapping-server
-#     ports:
-#       - "3500:3500"
-#     restart: always
-#     depends_on:
-#       - wrapping
-#   bankmudra-server:
-#     build:
-#       context: ../merchant-backend
-#     container_name: bankmudra-server
-#     ports:
-#       - "4000:4000"
-#     restart: always
-#     depends_on:
-#       - bankmudrauser
-#   # payin - payout
-#   server:
-#     build:
-#       context: ../PayinPayout/Backend   # relative to docker-compose.yml
-#     container_name: payinpayout-server
-#     ports:
-#       - "3000:3000"
-#     restart: always
-#     depends_on:
-#       - user
-#       - admin
-#   # dev-server:
-#   #   build:
-#   #     context: ../dev/PayinPayout/Backend  
-#   #   container_name: devpayinpayout-server
-#   #   ports:
-#   #     - "3001:3000"
-#   #   restart: always
-#   #   depends_on:
-#   #     - devuser
-#   #     - devadmin
-#   # adminbankmudra
-#   bankmudraadmin:
-#    image: nginx:alpine
-#    container_name: bankmudraadmin
-#    volumes:
-#     - ./bankmudraadmin:/usr/share/nginx/html   # ✅ Your folder (lowercase)
-#    expose:
-#     - 80
-
-#   nginx:
-#     image: nginx:alpine
-#     container_name: reverse-proxy
-#     ports:
-#       - "80:80"
-#       - "443:443"
-#     volumes:
-#       -  /etc/letsencrypt:/etc/letsencrypt:ro
-#       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-#       - ./ecomFrontend:/var/www/ecom
-#       - ./WrappingVendor:/var/www/wrappingvendor
-#       # payin - payout
-#       - ./PayinPayoutAdmin:/var/www/admin
-#       - ./PayinpayoutUser:/var/www/user
-#       # payin - payout
-#       - ./WrappingStudio:/var/www/wrapping
-#       - ./BankMudra:/var/www/bankmudra
-#       - ./bankmudraadmin:/var/www/bankmudraadmin     # ✅ Added here
-#       - ./NewEcom/Vendor:/var/www/newEcomVendor
-#       - ./NewEcom/User:/var/www/newEcomUser
-#       - ./dev/BankMudra:/var/www/devbankmudra
-#       # - ../dev/PayinPayout/User/build:/var/www/devuser
-#       # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
-#     depends_on:
-#       - ecom
-#       - admin
-#       - user
-#       - wrapping
-#       - wrappingvendor
-#       - bankmudrauser
-#       - bankmudraadmin        # ✅ Add here
-#       - newEcomUser
-#       - newEcomVendor
-#       # - devuser
-#       # - devadmin
-
-
-version: "3.8"
-
 services:
   ecom:
     image: nginx:alpine
@@ -181,7 +6,6 @@ services:
       - ./ecomFrontend:/usr/share/nginx/html
     expose:
       - 80
-
   admin:
     image: nginx:alpine
     container_name: admin
@@ -189,7 +13,7 @@ services:
       - ./PayinPayoutAdmin:/usr/share/nginx/html
     expose:
       - 80
-
+  
   user:
     image: nginx:alpine
     container_name: user
@@ -197,7 +21,20 @@ services:
       - ./PayinpayoutUser:/usr/share/nginx/html
     expose:
       - 80
-
+  # devuser:
+  #   image: nginx:alpine
+  #   container_name: devuser
+  #   volumes:
+  #     - ../dev/PayinPayout/User/build:/usr/share/nginx/html
+  #   expose:
+  #     - 80
+  # devadmin:
+  #   image: nginx:alpine
+  #   container_name: devadmin
+  #   volumes:
+  #     - ../dev/PayinPayout/Admin/build:/usr/share/nginx/html
+  #   expose:
+  #     - 80
   wrapping:
     image: nginx:alpine
     container_name: wrapping
@@ -205,7 +42,6 @@ services:
       - ./WrappingStudio:/usr/share/nginx/html
     expose:
       - 80
-
   wrappingvendor:
     image: nginx:alpine
     container_name: wrappingvendor
@@ -213,7 +49,6 @@ services:
       - ./WrappingVendor:/usr/share/nginx/html
     expose:
       - 80
-
   newEcomUser:
     image: nginx:alpine
     container_name: newEcomUser
@@ -221,7 +56,6 @@ services:
       - ./NewEcom/User:/usr/share/nginx/html
     expose:
       - 80
-
   newEcomVendor:
     image: nginx:alpine
     container_name: newEcomVendor
@@ -229,7 +63,6 @@ services:
       - ./NewEcom/Vendor:/usr/share/nginx/html
     expose:
       - 80
-
   bankmudrauser:
     image: nginx:alpine
     container_name: bankmudrauser
@@ -237,7 +70,6 @@ services:
       - ./BankMudra:/usr/share/nginx/html
     expose:
       - 80
-
   devbankmudrauser:
     image: nginx:alpine
     container_name: devbankmudrauser
@@ -245,7 +77,6 @@ services:
       - ./dev/BankMudra:/usr/share/nginx/html
     expose:
       - 80
-
   ecom-server:
     build:
       context: ../ecomm/server
@@ -255,7 +86,6 @@ services:
     restart: always
     depends_on:
       - ecom
-
   wrapping-server:
     build:
       context: ../wrappingstudio/Server
@@ -265,7 +95,6 @@ services:
     restart: always
     depends_on:
       - wrapping
-
   bankmudra-server:
     build:
       context: ../merchant-backend
@@ -275,10 +104,10 @@ services:
     restart: always
     depends_on:
       - bankmudrauser
-
-  payinpayout-server:
+  # payin - payout
+  server:
     build:
-      context: ../PayinPayout/Backend
+      context: ../PayinPayout/Backend   # relative to docker-compose.yml
     container_name: payinpayout-server
     ports:
       - "3000:3000"
@@ -286,32 +115,48 @@ services:
     depends_on:
       - user
       - admin
-
+  # dev-server:
+  #   build:
+  #     context: ../dev/PayinPayout/Backend  
+  #   container_name: devpayinpayout-server
+  #   ports:
+  #     - "3001:3000"
+  #   restart: always
+  #   depends_on:
+  #     - devuser
+  #     - devadmin
+  # adminbankmudra
   bankmudraadmin:
-    image: nginx:alpine
-    container_name: bankmudraadmin
-    volumes:
-      - ./bankmudraadmin:/usr/share/nginx/html
-    expose:
-      - 80
+   image: nginx:alpine
+   container_name: bankmudraadmin
+   volumes:
+    - ./bankmudraadmin:/usr/share/nginx/html   # ✅ Your folder (lowercase)
+   expose:
+    - 80
 
   nginx:
     image: nginx:alpine
     container_name: reverse-proxy
     ports:
       - "80:80"
+      - "443:443"
     volumes:
+      -  /etc/letsencrypt:/etc/letsencrypt:ro
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./ecomFrontend:/var/www/ecom
       - ./WrappingVendor:/var/www/wrappingvendor
+      # payin - payout
       - ./PayinPayoutAdmin:/var/www/admin
       - ./PayinpayoutUser:/var/www/user
+      # payin - payout
       - ./WrappingStudio:/var/www/wrapping
       - ./BankMudra:/var/www/bankmudra
-      - ./bankmudraadmin:/var/www/bankmudraadmin
+      - ./bankmudraadmin:/var/www/bankmudraadmin     # ✅ Added here
       - ./NewEcom/Vendor:/var/www/newEcomVendor
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
+      # - ../dev/PayinPayout/User/build:/var/www/devuser
+      # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
     depends_on:
       - ecom
       - admin
@@ -319,6 +164,8 @@ services:
       - wrapping
       - wrappingvendor
       - bankmudrauser
-      - bankmudraadmin
+      - bankmudraadmin        # ✅ Add here
       - newEcomUser
       - newEcomVendor
+      # - devuser
+      # - devadmin
