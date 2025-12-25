@@ -1,0 +1,1 @@
+import{r as n}from"./index.CEWEvIZy.js";const i=()=>{const[a,s]=n.useState(1),[t,r]=n.useState(10);return{startItem:(a-1)*t+1,handlePageChange:(e,o)=>{e>=1&&e<=o&&e!==a&&s(e)},handlePageSizeChange:e=>{e>0&&e!==t&&r(e)},pageNumber:a,pageSizeValue:t}};export{i as u};
