@@ -1,1 +1,0 @@
-import{j as t}from"./index.B52VTIO0.js";import o from"./Product.DIWkyaRG.js";import"./usePagination.D6RIs4L-.js";import"./useModal.DwttrLYQ.js";import"./ConfirmationModal.CB1k6RVv.js";import"./x._2yihMph.js";import"./eye.BG7YBkvC.js";import"./PageHeadline.BUQzlDZD.js";const u=()=>t.jsx(o,{status:"PENDING"});export{u as default};

@@ -1,1 +1,0 @@
-import{j as t}from"./index.BotYvSpe.js";import o from"./Product.DgzyTP2C.js";import"./usePagination.BaXlVQtp.js";import"./useModal.2i5g76cV.js";import"./x.B7ELbNjt.js";import"./eye.C_6pru8d.js";import"./PageHeadline.DB_YZffS.js";const j=()=>t.jsx(o,{status:"REJECTED"});export{j as default};

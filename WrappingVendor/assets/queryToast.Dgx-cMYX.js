@@ -1,1 +1,0 @@
-import{y as o}from"./index.CpL9bG4g.js";const t=(...r)=>({onSuccess:e=>{e?.message?o.success(e.message):o.success("successful!"),r.forEach(s=>typeof s=="function"&&s?.())},onError:e=>{const s=e?.response?.data||e,n=s.message||s?.error||s?.err||"Something went wrong";o.error(n)}});export{t as h};

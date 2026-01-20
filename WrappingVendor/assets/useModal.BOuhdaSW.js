@@ -1,1 +1,0 @@
-import{r as o}from"./index.Csw-1OGQ.js";const u=()=>{const[t,s]=o.useState({}),[a,l]=o.useState(!1),[n,c]=o.useState();return{isModalOpen:t,openModal:(e,d)=>{s(e),c(d)},closeModal:e=>{console.log(e),s(e),l(!1)},data:n,isImageModelOpen:a}};export{u};

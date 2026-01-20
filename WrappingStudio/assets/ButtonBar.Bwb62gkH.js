@@ -1,1 +1,0 @@
-import{j as a}from"./index.C0EwQNyI.js";const o=({buttons:e})=>a.jsx("div",{className:"flex gap-2",children:e.map((s,l)=>a.jsx("button",{onClick:s.onClick,className:`px-3   text-white rounded-lg transition ${s.colorClass}`,children:s.label},l))});export{o as B};
