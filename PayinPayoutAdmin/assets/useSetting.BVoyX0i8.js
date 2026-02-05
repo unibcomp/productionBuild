@@ -1,0 +1,1 @@
+import{f as o,g as u}from"./index.fcZbOc5V.js";const g=e=>u.get("/get-setting",{params:e}).then(t=>t.data),c=(e={})=>{const{data:t,isLoading:n,refetch:i}=o({queryKey:["setting",e],queryFn:()=>g(e),enabled:!!(e!=null&&e.user_id),refetchOnWindowFocus:!1});return{data:t==null?void 0:t.data,isLoading:n,refetch:i}};export{c as u};
