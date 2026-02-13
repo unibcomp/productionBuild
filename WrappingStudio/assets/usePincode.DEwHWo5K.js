@@ -1,0 +1,1 @@
+import{a,l as t}from"./index.B_APUxUE.js";const s=async e=>(await t.get(`https://api.postalpincode.in/pincode/${e}`)).data,r=e=>a({queryKey:["pincodeData",e],queryFn:()=>s(e),enabled:e.length===6,staleTime:1e3*60*5});export{r as u};
