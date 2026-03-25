@@ -155,6 +155,7 @@ services:
       - ./NewEcom/Vendor:/var/www/newEcomVendor
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
+      - ./AmbelTradeFrontend:/var/www/ambeltrade     # added new ambeltradeFrontend
       # - ../dev/PayinPayout/User/build:/var/www/devuser
       # - ../dev/PayinPayout/Admin/build:/var/www/devadmin
     depends_on:
