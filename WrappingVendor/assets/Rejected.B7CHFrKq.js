@@ -1,0 +1,1 @@
+import{j as t}from"./index.g3BH7kV1.js";import o from"./Product.Dqe1MTGp.js";import"./usePagination.CUMnfWhR.js";import"./useModal.DMR9kb_B.js";import"./ConfirmationModal.D3Q1K1iF.js";import"./x.AjC3CX_w.js";import"./eye.CzvH_svq.js";import"./PageHeadline.XyB_mWUE.js";const u=()=>t.jsx(o,{status:"REJECTED"});export{u as default};
