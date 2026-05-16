@@ -248,6 +248,20 @@ services:
     depends_on:
       - wrapping
 
+
+      
+  bankmudra-server:
+    build:
+      context: ../merchant-backend
+    container_name: bankmudra-server
+    ports:
+      - "3200:3200"
+    restart: always
+    depends_on:
+      - bankmudrauser
+
+
+      
   server:
     build:
       context: ../PayinPayout/Backend
