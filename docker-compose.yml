@@ -319,4 +319,3 @@ services:
       - bankmudraadmin
       - newEcomUser
       - newEcomVendor
-      - adminhrms
