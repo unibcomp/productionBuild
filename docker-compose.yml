@@ -309,6 +309,7 @@ services:
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
       - ./AmbelTradeFrontend:/var/www/ambeltrade
+      - ./adminhrms:/var/www/adminhrms
     depends_on:
       - admin
       - user
@@ -318,3 +319,4 @@ services:
       - bankmudraadmin
       - newEcomUser
       - newEcomVendor
+      - adminhrms
