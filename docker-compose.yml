@@ -260,7 +260,14 @@ services:
     depends_on:
       - bankmudrauser
 
-
+  hrms-server:
+    build:
+      context: ../HRMS/Server
+    container_name: hrms-server
+    ports:
+      - "4003:4003"
+    restart: always
+   
       
   server:
     build:
