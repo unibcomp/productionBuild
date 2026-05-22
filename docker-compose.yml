@@ -310,6 +310,7 @@ services:
       - ./dev/BankMudra:/var/www/devbankmudra
       - ./AmbelTradeFrontend:/var/www/ambeltrade
       - ./adminhrms:/var/www/adminhrms
+      - ./clienthrms:/var/www/clienthrms
     depends_on:
       - admin
       - user
