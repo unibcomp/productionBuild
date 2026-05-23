@@ -1,0 +1,1 @@
+const e=(n,i)=>{if(!i)return"";if(n==="mobile")return i.length>=5?`${i.slice(0,2)}XXXXX${i.slice(-3)}`:i;if(n==="email"){const[t,s]=i.split("@");if(!t||!s)return i;const r=t.slice(0,2),c=`${t.slice(-1)}@${s}`;return`${r}******${c}`}return i};export{e as m};
