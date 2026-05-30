@@ -1,0 +1,1 @@
+import{e as a}from"./index.DwU_S2h8.js";const P=()=>{const[t,n]=a.useState(1),[s,o]=a.useState(10),u=(t-1)*s+1,c=a.useCallback((e,i)=>{e>=1&&e<=i&&e!==t&&n(e)},[t]),r=a.useCallback(e=>{e>0&&e!==s&&(o(e),n(1))},[s]),l=a.useCallback(()=>{n(1)},[]);return{startItem:u,handlePageChange:c,handlePageSizeChange:r,resetPagination:l,pageNumber:t,pageSizeValue:s}};export{P as u};
