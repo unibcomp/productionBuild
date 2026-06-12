@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpaymaster=self.webpackChunkpaymaster||[]).push([[1796],{1796:(e,r,s)=>{s.r(r),s.d(r,{default:()=>u});var a=s(73216),t=s(70579);const l=["Distributor","Super Distributor","asm","zsm"],u=()=>{const e=localStorage.getItem("userType");return l.includes(e)?(0,t.jsx)(a.sv,{}):(localStorage.clear(),(0,t.jsx)(a.C5,{to:"/login-area",replace:!0}))}}}]);
+//# sourceMappingURL=1796.f9c891b0.chunk.js.map
