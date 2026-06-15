@@ -311,6 +311,7 @@ services:
       - ./AmbelTradeFrontend:/var/www/ambeltrade
       - ./adminhrms:/var/www/adminhrms
       - ./clienthrms:/var/www/clienthrms
+      - ./UnibcompLandingPage:/var/www/unibcompLandingPage
     depends_on:
       - admin
       - user
