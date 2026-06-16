@@ -238,6 +238,14 @@ services:
     expose:
       - 80
 
+  rapportclient:
+    image: nginx:alpine
+    container_name: rapportclient
+    volumes:
+      - ./RapportClient:/usr/share/nginx/html
+    expose:
+      - 80
+
   wrapping-server:
     build:
       context: ../wrappingstudio/Server
@@ -320,6 +328,7 @@ services:
       - ./adminhrms:/var/www/adminhrms
       - ./clienthrms:/var/www/clienthrms
       - ./UnibcompLandingPage:/var/www/unibcompLandingPage
+      - ./RapportClient:/var/www/rapportclient
     depends_on:
       - admin
       - user
@@ -329,3 +338,4 @@ services:
       - bankmudraadmin
       - newEcomUser
       - newEcomVendor
+      - rapportclient
