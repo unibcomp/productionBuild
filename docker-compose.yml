@@ -246,6 +246,22 @@ services:
     expose:
       - 80
 
+  rapportadmin:
+    image: nginx:alpine
+    container_name: rapportadmin
+    volumes:
+      - ./RapportAdmin:/usr/share/nginx/html
+    expose:
+      - 80
+
+  rapportmr:
+    image: nginx:alpine
+    container_name: rapportmr
+    volumes:
+      - ./RapportMr:/usr/share/nginx/html
+    expose:
+      - 80
+
   wrapping-server:
     build:
       context: ../wrappingstudio/Server
@@ -329,6 +345,8 @@ services:
       - ./clienthrms:/var/www/clienthrms
       - ./UnibcompLandingPage:/var/www/unibcompLandingPage
       - ./RapportClient:/var/www/rapportclient
+      - ./RapportAdmin:/var/www/rapportadmin
+      - ./RapportMr:/var/www/rapportmr
     depends_on:
       - admin
       - user
@@ -339,3 +357,5 @@ services:
       - newEcomUser
       - newEcomVendor
       - rapportclient
+      - rapportadmin
+      - rapportmr
