@@ -1,0 +1,1 @@
+import{N as e,b as t}from"./index-ByRwqffZ.js";const n=n=>e({queryKey:[`plans`,n],queryFn:async()=>(await t.get(`/esim/plans`,{params:n})).data.data,enabled:!!n?.country}),r=n=>e({queryKey:[`plan`,n],queryFn:async()=>(await t.get(`/esim/plans/${n}`)).data.data,enabled:!!n});export{n,r as t};
