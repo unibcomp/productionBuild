@@ -1,0 +1,1 @@
+import{b as e,z as t}from"./index-DQ2UkbOl.js";const n=()=>t({queryKey:[`plan-tags`],queryFn:async()=>(await e.get(`/plan-tags`)).data.data});export{n as t};

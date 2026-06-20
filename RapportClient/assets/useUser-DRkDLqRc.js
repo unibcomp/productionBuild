@@ -1,0 +1,1 @@
+import{C as e,b as t,z as n}from"./index-DQ2UkbOl.js";const r=()=>n({queryKey:[`user-details`],queryFn:async()=>(await t.get(`/user-details`)).data.data,enabled:!!e(),staleTime:300*1e3,refetchOnWindowFocus:!1});export{r as t};

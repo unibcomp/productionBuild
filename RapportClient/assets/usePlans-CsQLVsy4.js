@@ -1,0 +1,1 @@
+import{b as e,z as t}from"./index-DQ2UkbOl.js";const n=n=>t({queryKey:[`allPlans`,n],queryFn:async()=>(await e.get(`/plans`,{params:n})).data.data.results,initialData:[]}),r=n=>t({queryKey:[`plan`,n],queryFn:async()=>{let t=await e.get(`/plans/${n}`);return console.log(`API FULL RESPONSE:`,t.data),t.data.data},enabled:!!n});export{n,r as t};

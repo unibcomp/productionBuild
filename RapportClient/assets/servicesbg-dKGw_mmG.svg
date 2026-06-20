@@ -1,0 +1,83 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="baseBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFDFF"/>
+      <stop offset="55%" stop-color="#EAF4FD"/>
+      <stop offset="100%" stop-color="#CFE6FA"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#A9D4F7" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#A9D4F7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#A9D4F7" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#CFE3F4" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="simGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#D6E9FB" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#baseBg)"/>
+  <rect width="1600" height="900" fill="url(#grid)" opacity="0.5"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <g stroke="#9FC9EE" stroke-width="1.5" fill="none" opacity="0.55">
+    <path d="M 700 180 Q 900 140 1080 220 T 1450 380"/>
+    <path d="M 720 420 Q 950 460 1120 380 T 1500 250"/>
+    <path d="M 680 560 Q 880 620 1080 560 T 1480 620"/>
+    <path d="M 760 300 Q 1000 260 1200 340"/>
+    <path d="M 650 660 Q 900 700 1150 660 T 1520 700"/>
+  </g>
+
+  <g fill="#3F8FDD" opacity="0.85">
+    <circle cx="700" cy="180" r="5"/>
+    <circle cx="1080" cy="220" r="4"/>
+    <circle cx="1450" cy="380" r="5"/>
+    <circle cx="720" cy="420" r="4"/>
+    <circle cx="1120" cy="380" r="5"/>
+    <circle cx="1500" cy="250" r="4"/>
+    <circle cx="680" cy="560" r="5"/>
+    <circle cx="1080" cy="560" r="4"/>
+    <circle cx="1480" cy="620" r="5"/>
+    <circle cx="760" cy="300" r="4"/>
+    <circle cx="1200" cy="340" r="5"/>
+    <circle cx="650" cy="660" r="4"/>
+    <circle cx="1150" cy="660" r="5"/>
+    <circle cx="1520" cy="700" r="4"/>
+  </g>
+
+  <g transform="translate(880,360) rotate(-8)">
+    <rect x="-90" y="-130" width="180" height="240" rx="22" fill="url(#simGrad)" stroke="#BFDEF7" stroke-width="2"/>
+    <path d="M -90 -90 L -50 -130 L 90 -130" fill="none" stroke="#BFDEF7" stroke-width="2"/>
+    <rect x="-45" y="-50" width="90" height="60" rx="6" fill="none" stroke="#8FBFE8" stroke-width="2.5"/>
+    <line x1="-45" y1="-20" x2="45" y2="-20" stroke="#8FBFE8" stroke-width="2"/>
+    <line x1="0" y1="-50" x2="0" y2="10" stroke="#8FBFE8" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(740,460) rotate(6)">
+    <rect x="-70" y="-100" width="140" height="190" rx="18" fill="url(#simGrad)" stroke="#BFDEF7" stroke-width="2"/>
+    <path d="M -70 -68 L -40 -100 L 70 -100" fill="none" stroke="#BFDEF7" stroke-width="2"/>
+    <rect x="-35" y="-40" width="70" height="46" rx="5" fill="none" stroke="#8FBFE8" stroke-width="2"/>
+    <line x1="-35" y1="-17" x2="35" y2="-17" stroke="#8FBFE8" stroke-width="1.5"/>
+  </g>
+
+  <g transform="translate(1030,470) rotate(10)">
+    <rect x="-65" y="-95" width="130" height="180" rx="16" fill="url(#simGrad)" stroke="#BFDEF7" stroke-width="2"/>
+    <path d="M -65 -65 L -38 -95 L 65 -95" fill="none" stroke="#BFDEF7" stroke-width="2"/>
+    <rect x="-32" y="-38" width="64" height="42" rx="5" fill="none" stroke="#8FBFE8" stroke-width="2"/>
+    <line x1="-32" y1="-17" x2="32" y2="-17" stroke="#8FBFE8" stroke-width="1.5"/>
+  </g>
+
+  <g transform="translate(1130,210)" stroke="#3F8FDD" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M -45 25 A 64 64 0 0 1 45 25"/>
+    <path d="M -28 25 A 40 40 0 0 1 28 25"/>
+    <path d="M -12 25 A 18 18 0 0 1 12 25"/>
+    <circle cx="0" cy="32" r="6" fill="#3F8FDD" stroke="none"/>
+  </g>
+
+  <g fill="#BFDEF7" opacity="0.7">
+    <path d="M 1500 740 l 8 18 18 8 -18 8 -8 18 -8 -18 -18 -8 18 -8 z"/>
+  </g>
+</svg>
