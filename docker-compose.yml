@@ -343,6 +343,7 @@ services:
       - ./AmbelTradeFrontend:/var/www/ambeltrade
       - ./adminhrms:/var/www/adminhrms
       - ./clienthrms:/var/www/clienthrms
+      - ./hrmsvisitor:/var/www/hrmsvisitor
       - ./UnibcompLandingPage:/var/www/unibcompLandingPage
       - ./RapportClient:/var/www/rapportclient
       - ./RapportAdmin:/var/www/rapportadmin
