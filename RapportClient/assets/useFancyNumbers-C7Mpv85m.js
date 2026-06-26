@@ -1,0 +1,1 @@
+import{U as e,w as t}from"./index-BKuCfDrP.js";const n=()=>e({queryKey:[`fancy-numbers`],queryFn:async()=>{let e=await t.get(`/fancy-number`);return console.log(`FANCY LIST:`,e.data),e.data.data}}),r=n=>e({queryKey:[`fancy-number`,n],queryFn:async()=>(await t.get(`/fancy-number/${n}`)).data.data,enabled:!!n});export{n,r as t};

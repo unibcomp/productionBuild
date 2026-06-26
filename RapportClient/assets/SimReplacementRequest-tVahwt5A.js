@@ -1,0 +1,159 @@
+import{t as e}from"./circle-check-ChRCwfyC.js";import{t}from"./clock-DzgGEiVh.js";import{t as n}from"./map-pin-BxppdnzG.js";import{t as r}from"./package-DJADSF2i.js";import{B as i,G as a,J as o,N as s,P as c,V as l,W as u,Z as d,j as f,q as p,tt as m,w as h,z as g}from"./index-BKuCfDrP.js";import{d as ee,f as te,l as _,n as v,o as y,p as b,u as x}from"./fi-BpM2-azL.js";import{t as S}from"./useUser-DlA8Bwsa.js";var C=i(`navigation`,[[`polygon`,{points:`3 11 22 2 13 21 11 13 3 11`,key:`1ltx0t`}]]),w=m(d(),1),T=a(),E=50,D=()=>{let i=o(),a=p().state?.operator,{data:d,isLoading:m}=S(),{data:D=[]}=te(),k=b(),A=u(),[j,M]=(0,w.useState)(null),[N,P]=(0,w.useState)(!1),[F,I]=(0,w.useState)(null),[L,R]=(0,w.useState)(!1),[z,B]=(0,w.useState)(!1),[V,H]=(0,w.useState)(``),[U,W]=(0,w.useState)(``),[G,K]=(0,w.useState)(``),[q,J]=(0,w.useState)(``),Y=[`SIM Damaged`,`Lost SIM`,`Network Upgrade (4G→5G)`,`Other`];if((0,w.useEffect)(()=>{D.length>0&&!j&&M((D.find(e=>e.isDefault)||D[0])._id)},[D,j]),!a)return(0,T.jsxs)(`div`,{className:`sr-loading`,children:[(0,T.jsx)(`style`,{children:O}),(0,T.jsx)(`p`,{style:{color:`#2563EB`,fontWeight:700},children:`No operator selected.`}),(0,T.jsx)(`button`,{className:`sr-back-btn`,onClick:()=>i(`/simreplacement`),children:`Go Back`})]});let X=a.id===`jio`,Z=D.find(e=>e._id===j),Q=V.length===10,$=V.length>0&&V.length<10;return m?(0,T.jsxs)(`div`,{className:`sr-loading`,children:[(0,T.jsx)(`style`,{children:O}),(0,T.jsx)(`div`,{className:`sr-spinner`})]}):(0,T.jsxs)(`div`,{className:`sr-root`,children:[(0,T.jsx)(`style`,{children:O}),(0,T.jsxs)(`nav`,{className:`sr-nav`,children:[(0,T.jsxs)(`button`,{className:`sr-back-btn`,onClick:()=>i(`/simreplacement`),children:[(0,T.jsx)(g,{size:14}),` Back`]}),(0,T.jsxs)(`div`,{className:`sr-nav-center`,children:[(0,T.jsx)(`span`,{className:`sr-nav-dot`,children:`🔧`}),(0,T.jsxs)(`span`,{className:`sr-nav-title`,children:[a.name,` SIM Replacement`]})]}),(0,T.jsx)(`div`,{style:{width:72}})]}),(0,T.jsxs)(`div`,{className:`sr-hero`,style:{background:`linear-gradient(135deg, ${a.color} 0%, ${a.color}CC 55%, ${a.color}99 100%)`},children:[(0,T.jsxs)(`div`,{className:`sr-hero-left`,children:[(0,T.jsx)(`div`,{className:`sr-hero-icon`,children:X?`🏬`:`🔧`}),(0,T.jsxs)(`div`,{children:[(0,T.jsx)(`div`,{className:`sr-hero-title`,children:X?`Visit Your Nearby Jio Store`:`SIM Replacement Request`}),(0,T.jsx)(`div`,{className:`sr-hero-sub`,children:X?`Aadhaar e-KYC verification · In-person only · Same-day activation`:`Tell us about your last recharge · Doorstep delivery · 24–48 hrs dispatch`})]})]}),!X&&(0,T.jsx)(`div`,{className:`sr-hero-steps`,children:[`Verify Details`,`Confirm Address`,`Pay Fee`,`SIM Dispatched`].map((e,t)=>(0,T.jsxs)(`div`,{className:`sr-hero-step`,children:[(0,T.jsx)(`div`,{className:`sr-hero-step-num`,children:t+1}),(0,T.jsx)(`div`,{className:`sr-hero-step-lbl`,children:e})]},e))})]}),X?(0,T.jsx)(`div`,{className:`sr-layout`,style:{gridTemplateColumns:`1fr`},children:(0,T.jsxs)(`div`,{className:`sr-left`,children:[(0,T.jsxs)(`div`,{className:`sr-card`,children:[(0,T.jsx)(`div`,{className:`sr-card-step`,children:`What to carry`}),(0,T.jsx)(`h2`,{className:`sr-card-title`,children:`Required for biometric e-KYC`}),(0,T.jsx)(`div`,{className:`sr-jio-grid`,children:[{icon:f,label:`Aadhaar Card`,sub:`Original, for biometric e-KYC`},{icon:c,label:`Existing Jio Number`,sub:`The one you're replacing`}].map(e=>(0,T.jsxs)(`div`,{className:`sr-jio-item`,children:[(0,T.jsx)(`div`,{className:`sr-jio-icon`,children:(0,T.jsx)(e.icon,{size:17,style:{color:a.color}})}),(0,T.jsx)(`p`,{className:`sr-jio-label`,children:e.label}),(0,T.jsx)(`p`,{className:`sr-jio-sub`,children:e.sub})]},e.label))})]}),(0,T.jsxs)(`div`,{className:`sr-card`,children:[(0,T.jsx)(`div`,{className:`sr-card-step`,children:`Store Info`}),(0,T.jsx)(`h2`,{className:`sr-card-title`,children:`Find your nearest store`}),(0,T.jsxs)(`div`,{className:`sr-store-row`,children:[(0,T.jsxs)(`div`,{className:`sr-store-info`,children:[(0,T.jsx)(t,{size:17,style:{color:a.color}}),(0,T.jsxs)(`div`,{children:[(0,T.jsx)(`p`,{className:`sr-store-label`,children:`Store Hours`}),(0,T.jsx)(`p`,{className:`sr-store-val`,children:`10:00 AM – 8:00 PM, all days`})]})]}),(0,T.jsxs)(`div`,{className:`sr-store-info`,children:[(0,T.jsx)(C,{size:17,style:{color:a.color}}),(0,T.jsxs)(`div`,{children:[(0,T.jsx)(`p`,{className:`sr-store-label`,children:`Avg. Wait Time`}),(0,T.jsx)(`p`,{className:`sr-store-val`,children:`~15–20 minutes`})]})]})]}),(0,T.jsxs)(`a`,{href:`https://www.jio.com/store-locator`,target:`_blank`,rel:`noopener noreferrer`,className:`sr-store-cta`,style:{background:`linear-gradient(135deg, ${a.color}, ${a.color}CC)`},children:[(0,T.jsx)(n,{size:18}),` Open Store Locator`]})]})]})}):L?(0,T.jsx)(`div`,{className:`sr-success-wrap`,children:(0,T.jsxs)(`div`,{className:`sr-success-card`,children:[(0,T.jsx)(`div`,{className:`sr-success-icon`,children:(0,T.jsx)(e,{size:30,style:{color:`#16A34A`}})}),(0,T.jsx)(`h3`,{className:`sr-success-title`,children:`Request Submitted!`}),(0,T.jsxs)(`p`,{className:`sr-success-sub`,children:[`Your `,a.name,` SIM replacement request has been received.`]}),(0,T.jsx)(`p`,{className:`sr-success-sub`,children:`A new SIM will be dispatched to your address within 24–48 hours.`}),(0,T.jsx)(`button`,{className:`sr-pay-btn`,style:{maxWidth:220,margin:`22px auto 0`},onClick:()=>i(`/simreplacement`),children:`Done`})]})}):(0,T.jsxs)(`div`,{className:`sr-layout`,children:[(0,T.jsxs)(`div`,{className:`sr-left`,children:[(0,T.jsxs)(`div`,{className:`sr-card`,children:[(0,T.jsx)(`div`,{className:`sr-card-step`,children:`Step 1`}),(0,T.jsx)(`h2`,{className:`sr-card-title`,children:d?`Hey ${d.fullName||d.name} 👋`:`Delivery Address`}),(0,T.jsx)(`p`,{className:`sr-card-sub`,children:`Where should we deliver your new SIM?`}),(0,T.jsx)(`div`,{className:`sr-addr-grid`,children:D.map(e=>(0,T.jsxs)(`div`,{className:`sr-addr-item${j===e._id?` sr-addr-selected`:``}`,onClick:()=>M(e._id),children:[(0,T.jsxs)(`div`,{className:`sr-addr-top`,children:[(0,T.jsxs)(`p`,{className:`sr-addr-line`,children:[e.houseNo,`, `,e.street]}),e.isDefault&&(0,T.jsx)(`span`,{className:`sr-default-badge`,children:`Default`})]}),(0,T.jsxs)(`p`,{className:`sr-addr-city`,children:[e.city,`, `,e.state,` — `,e.pincode]}),(0,T.jsxs)(`div`,{className:`sr-addr-actions`,children:[(0,T.jsxs)(`button`,{className:`sr-addr-edit`,onClick:t=>{t.stopPropagation(),I(e),P(!0)},children:[(0,T.jsx)(v,{size:11}),` Edit`]}),(0,T.jsxs)(`button`,{className:`sr-addr-del`,onClick:t=>{t.stopPropagation(),k.mutate(e._id,{onSuccess:()=>A.invalidateQueries({queryKey:[`address`]})})},children:[(0,T.jsx)(x,{size:11}),` Remove`]})]})]},e._id))}),(0,T.jsxs)(`div`,{className:`sr-addr-btns`,children:[(0,T.jsxs)(`button`,{className:`sr-add-addr-btn`,onClick:()=>{I(null),P(!0)},children:[(0,T.jsx)(_,{size:14}),` Add Address`]}),(0,T.jsxs)(`button`,{className:`sr-loc-btn`,onClick:()=>{if(!navigator.geolocation){l.error(`Location not supported on this device`);return}navigator.geolocation.getCurrentPosition(async e=>{let{latitude:t,longitude:n}=e.coords;try{let e=(await(await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${t}&lon=${n}&format=json`)).json()).address||{},r=`Current Location`,i=e.road||e.suburb||e.neighbourhood||``,a=e.city||e.town||e.village||`Gurugram`,o=e.state||`Haryana`,s=e.postcode||`000000`,c=D.find(e=>e.houseNo===`Current Location`),u;u=c?await h.put(`/address/${c._id}`,{houseNo:r,street:i,city:a,state:o,pincode:s,latitude:t,longitude:n}):await h.post(`/address`,{houseNo:r,street:i,city:a,state:o,pincode:s,latitude:t,longitude:n});let d=u.data.data;A.invalidateQueries({queryKey:[`address`]}),M(d._id),l.success(`Location fetched 📍`)}catch{l.error(`Failed to fetch address`)}},()=>l.error(`Location permission denied`))},children:[(0,T.jsx)(y,{size:14}),` Use My Location`]})]})]}),(0,T.jsxs)(`div`,{className:`sr-card sr-replace-card`,children:[(0,T.jsxs)(`div`,{className:`sr-replace-header`,children:[(0,T.jsx)(`div`,{className:`sr-replace-header-icon`,children:`📶`}),(0,T.jsxs)(`div`,{children:[(0,T.jsx)(`div`,{className:`sr-card-step`,style:{marginBottom:2},children:`Step 2 — Replacement Details`}),(0,T.jsx)(`h2`,{className:`sr-card-title`,style:{marginBottom:0},children:`Your Current Number & Last Recharge`})]})]}),(0,T.jsx)(`p`,{className:`sr-card-sub`,style:{marginTop:14},children:`This helps us verify ownership and set up your new SIM correctly`}),(0,T.jsxs)(`div`,{className:`sr-replace-fields`,children:[(0,T.jsxs)(`div`,{className:`sr-field-group`,children:[(0,T.jsxs)(`label`,{className:`sr-field-label`,children:[(0,T.jsx)(`span`,{className:`sr-field-num`,children:`01`}),` Existing `,a.name,` Number`]}),(0,T.jsxs)(`div`,{className:`sr-number-wrap`,children:[(0,T.jsx)(`div`,{className:`sr-number-prefix`,children:`+91`}),(0,T.jsx)(`input`,{className:`sr-number-input${Q?` sr-input-ok`:$?` sr-input-warn`:``}`,type:`tel`,inputMode:`numeric`,placeholder:`Enter 10-digit number`,value:V,onChange:e=>H(e.target.value.replace(/\D/g,``).slice(0,10)),maxLength:10}),Q&&(0,T.jsx)(`div`,{className:`sr-input-check`,children:`✓`})]}),(0,T.jsx)(`div`,{className:`sr-progress-track`,children:(0,T.jsx)(`div`,{className:`sr-progress-fill${Q?` sr-progress-ok`:``}`,style:{width:`${V.length/10*100}%`}})}),(0,T.jsxs)(`div`,{className:`sr-number-meta`,children:[Q?(0,T.jsx)(`span`,{className:`sr-meta-ok`,children:`✓ Valid number — ready to verify`}):$?(0,T.jsxs)(`span`,{className:`sr-meta-warn`,children:[10-V.length,` more digit`,10-V.length==1?``:`s`,` needed`]}):(0,T.jsx)(`span`,{className:`sr-meta-neutral`,children:`This number will receive the activation OTP`}),(0,T.jsxs)(`span`,{className:`sr-meta-count`,children:[V.length,`/10`]})]})]}),(0,T.jsx)(`div`,{className:`sr-divider`,children:(0,T.jsx)(`span`,{className:`sr-divider-label`,children:`Last recharge details`})}),(0,T.jsxs)(`div`,{className:`sr-grid-2`,children:[(0,T.jsxs)(`div`,{className:`sr-field-group`,children:[(0,T.jsxs)(`label`,{className:`sr-field-label`,children:[(0,T.jsx)(`span`,{className:`sr-field-num`,children:`02`}),` Last Recharge Amount (₹)`]}),(0,T.jsx)(`input`,{className:`sr-text-input`,type:`number`,placeholder:`e.g. 299`,value:U,onChange:e=>W(e.target.value)})]}),(0,T.jsxs)(`div`,{className:`sr-field-group`,children:[(0,T.jsxs)(`label`,{className:`sr-field-label`,children:[(0,T.jsx)(`span`,{className:`sr-field-num`,children:`03`}),` Plan / Pack Name`]}),(0,T.jsx)(`input`,{className:`sr-text-input`,type:`text`,placeholder:`e.g. 1.5GB/day, 28 days`,value:G,onChange:e=>K(e.target.value)})]})]}),(0,T.jsx)(`div`,{className:`sr-divider`,children:(0,T.jsx)(`span`,{className:`sr-divider-label`,children:`Why do you need a replacement?`})}),(0,T.jsxs)(`div`,{className:`sr-field-group`,children:[(0,T.jsxs)(`label`,{className:`sr-field-label`,children:[(0,T.jsx)(`span`,{className:`sr-field-num`,children:`04`}),` Reason`]}),(0,T.jsx)(`div`,{className:`sr-reason-grid`,children:Y.map(e=>{let t=q===e;return(0,T.jsx)(`button`,{type:`button`,onClick:()=>J(e),className:`sr-reason-card`,style:{borderColor:t?a.color:`#DDE3F5`,background:t?`${a.color}10`:`#FAFBFF`,color:t?a.color:`#374151`},children:e},e)})})]}),(0,T.jsxs)(`div`,{className:`sr-timeline`,children:[(0,T.jsxs)(`div`,{className:`sr-timeline-header`,children:[(0,T.jsx)(`span`,{children:`📋`}),` What happens next?`]}),(0,T.jsx)(`div`,{className:`sr-timeline-items`,children:[{icon:`🔍`,title:`Identity Verified`,desc:`We match your number and last recharge to confirm ownership`},{icon:`🚚`,title:`SIM Dispatched`,desc:`New SIM card delivered to your address within 24–48 hours`},{icon:`✅`,title:`Activated`,desc:`Insert the new SIM — your number stays exactly the same`}].map((e,t)=>(0,T.jsxs)(`div`,{className:`sr-timeline-item`,children:[(0,T.jsx)(`div`,{className:`sr-timeline-icon`,children:e.icon}),(0,T.jsx)(`div`,{className:`sr-timeline-line`}),(0,T.jsxs)(`div`,{className:`sr-timeline-content`,children:[(0,T.jsx)(`div`,{className:`sr-timeline-title`,children:e.title}),(0,T.jsx)(`div`,{className:`sr-timeline-desc`,children:e.desc})]})]},t))})]})]})]})]}),(0,T.jsx)(`div`,{className:`sr-right`,children:(0,T.jsxs)(`div`,{className:`sr-summary-card`,children:[(0,T.jsxs)(`div`,{className:`sr-summary-header`,children:[(0,T.jsx)(r,{size:15}),(0,T.jsx)(`span`,{children:`Replacement Summary`}),(0,T.jsx)(`span`,{className:`sr-op-badge`,style:{background:`${a.color}10`,color:a.color,borderColor:`${a.color}33`},children:a.name})]}),(0,T.jsxs)(`div`,{className:`sr-op-row`,children:[(0,T.jsx)(`div`,{className:`sr-op-avatar`,style:{background:`${a.color}18`,color:a.color},children:a.name[0]}),(0,T.jsxs)(`div`,{children:[(0,T.jsxs)(`span`,{className:`sr-op-name`,children:[a.name,` SIM Replacement`]}),(0,T.jsx)(`div`,{className:`sr-op-sub`,children:`New SIM, same number`})]})]}),(0,T.jsx)(`div`,{className:`sr-spec-box`,children:[{label:`Existing Number`,val:V?`+91 ${V}`:`—`},{label:`Last Recharge`,val:U?`₹${U}`:`—`},{label:`Plan`,val:G||`—`},{label:`Reason`,val:q||`—`}].map((e,t)=>(0,T.jsxs)(`div`,{className:`sr-spec-row`,children:[(0,T.jsx)(`span`,{className:`sr-spec-key`,children:e.label}),(0,T.jsx)(`span`,{className:`sr-spec-val`,children:e.val})]},t))}),(0,T.jsxs)(`div`,{className:`sr-price-section`,children:[(0,T.jsxs)(`div`,{className:`sr-price-row`,children:[(0,T.jsx)(`span`,{children:`Replacement Fee`}),(0,T.jsxs)(`span`,{children:[`₹`,E]})]}),(0,T.jsxs)(`div`,{className:`sr-price-row`,children:[(0,T.jsx)(`span`,{children:`Delivery`}),(0,T.jsx)(`span`,{className:`sr-free-tag`,children:`FREE`})]}),(0,T.jsx)(`div`,{className:`sr-price-divider`}),(0,T.jsxs)(`div`,{className:`sr-price-total-row`,children:[(0,T.jsx)(`span`,{children:`Total`}),(0,T.jsxs)(`span`,{children:[`₹`,E]})]})]}),(0,T.jsxs)(`div`,{className:`sr-info-section`,children:[(0,T.jsxs)(`div`,{className:`sr-info-row`,children:[(0,T.jsx)(`span`,{className:`sr-info-key`,children:`Deliver to`}),(0,T.jsx)(`span`,{className:`sr-info-val`,children:Z?`${Z.houseNo}, ${Z.street}`:`—`})]}),(0,T.jsxs)(`div`,{className:`sr-info-row`,children:[(0,T.jsx)(`span`,{className:`sr-info-key`,children:`Payment`}),(0,T.jsx)(`span`,{className:`sr-info-val`,children:`Cash on Delivery`})]})]}),(0,T.jsxs)(`div`,{className:`sr-readiness`,children:[(0,T.jsxs)(`div`,{className:`sr-ready-row`,children:[(0,T.jsx)(`span`,{className:`sr-ready-dot${j?` ok`:``}`}),(0,T.jsx)(`span`,{className:`sr-ready-txt${j?` ok`:``}`,children:`Delivery address`})]}),(0,T.jsxs)(`div`,{className:`sr-ready-row`,children:[(0,T.jsx)(`span`,{className:`sr-ready-dot${Q?` ok`:``}`}),(0,T.jsxs)(`span`,{className:`sr-ready-txt${Q?` ok`:``}`,children:[`Mobile number (`,V.length,`/10)`]})]}),(0,T.jsxs)(`div`,{className:`sr-ready-row`,children:[(0,T.jsx)(`span`,{className:`sr-ready-dot${q?` ok`:``}`}),(0,T.jsxs)(`span`,{className:`sr-ready-txt${q?` ok`:``}`,children:[`Reason `,q?`(${q})`:``]})]})]}),(0,T.jsx)(`button`,{className:`sr-pay-btn`,onClick:async()=>{if(!Z)return l.error(`Select a delivery address`);if(!Q)return l.error(`Enter a valid 10-digit existing number`);if(!q)return l.error(`Select a reason for replacement`);B(!0);try{await h.post(`/sim-replacement`,{addressId:Z._id,operatorId:a.id,existingNumber:V,lastRechargeAmount:U,lastRechargePlan:G,reason:q,paymentMethod:`COD`}),R(!0)}catch(e){l.error(e?.response?.data?.message||`Request failed ❌`)}finally{B(!1)}},disabled:z,children:z?`Submitting…`:(0,T.jsxs)(T.Fragment,{children:[(0,T.jsx)(s,{size:16,style:{marginRight:6,verticalAlign:-2}}),`Confirm Replacement — ₹`,E,` →`]})}),(0,T.jsx)(`button`,{className:`sr-cancel-btn`,onClick:()=>i(-1),children:`Cancel`})]})})]}),N&&(0,T.jsx)(ee,{close:()=>{P(!1),I(null)},editingAddress:F})]})},O=`
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@700;800&display=swap');
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  .sr-root { min-height: 100vh; background: #F0F4FF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+  .sr-loading { min-height: 100vh; background: #F0F4FF; display: flex; flex-direction: column; gap: 14px; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; }
+  .sr-spinner { width: 40px; height: 40px; border-radius: 50%; border: 3px solid #DBEAFE; border-top-color: #3B82F6; animation: sr-spin 0.75s linear infinite; }
+  @keyframes sr-spin { to { transform: rotate(360deg); } }
+
+  .sr-nav { position: sticky; top: 0; z-index: 40; background: rgba(240,244,255,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid #DDE3F5; height: 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+  .sr-back-btn { display: flex; align-items: center; gap: 6px; background: #fff; border: 1px solid #DDE3F5; border-radius: 10px; padding: 7px 14px; font-size: 13px; font-weight: 600; color: #4B5563; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+  .sr-back-btn:hover { border-color: #3B82F6; color: #3B82F6; background: #EFF6FF; }
+  .sr-nav-center { display: flex; align-items: center; gap: 8px; }
+  .sr-nav-dot { font-size: 18px; }
+  .sr-nav-title { font-family: 'Sora', sans-serif; font-size: 15px; font-weight: 800; color: #111827; letter-spacing: -0.3px; }
+
+  .sr-hero { padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+  .sr-hero-left { display: flex; align-items: center; gap: 14px; }
+  .sr-hero-icon { width: 48px; height: 48px; border-radius: 14px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; color: #fff; }
+  .sr-hero-title { font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+  .sr-hero-sub { font-size: 12px; color: rgba(255,255,255,0.8); }
+  .sr-hero-steps { display: flex; align-items: center; gap: 6px; }
+  .sr-hero-step { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .sr-hero-step-num { width: 22px; height: 22px; border-radius: 50%; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.35); color: #fff; font-size: 10px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  .sr-hero-step-lbl { font-size: 10px; color: rgba(255,255,255,0.75); font-weight: 600; white-space: nowrap; }
+
+  .sr-layout { display: grid; grid-template-columns: 1fr 380px; gap: 20px; padding: 20px 24px; max-width: 1100px; margin: 0 auto; }
+  .sr-left { display: flex; flex-direction: column; gap: 16px; }
+
+  .sr-card { background: #fff; border-radius: 22px; border: 1px solid #DDE3F5; padding: 22px; box-shadow: 0 2px 14px rgba(59,130,246,0.06); }
+  .sr-card-step { font-size: 10px; font-weight: 800; color: #3B82F6; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px; }
+  .sr-card-title { font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 800; color: #111827; margin-bottom: 4px; }
+  .sr-card-sub { font-size: 13px; color: #9CA3AF; margin-bottom: 18px; }
+
+  .sr-jio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .sr-jio-item { background: #F8FAFF; border: 1.5px solid #E0E7FF; border-radius: 14px; padding: 16px; }
+  .sr-jio-icon { width: 36px; height: 36px; border-radius: 10px; background: #EFF6FF; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+  .sr-jio-label { font-weight: 700; font-size: 13.5px; color: #111827; margin-bottom: 3px; }
+  .sr-jio-sub { font-size: 12px; color: #6B7280; }
+
+  .sr-store-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
+  .sr-store-info { flex: 1 1 220px; display: flex; align-items: center; gap: 12px; background: #F8FAFF; border: 1px solid #E0E7FF; border-radius: 14px; padding: 14px 16px; }
+  .sr-store-label { font-weight: 700; font-size: 13px; color: #111827; }
+  .sr-store-val { font-size: 12px; color: #6B7280; }
+  .sr-store-cta { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; border-radius: 13px; color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; }
+
+  .sr-success-wrap { display: flex; justify-content: center; padding: 60px 24px; }
+  .sr-success-card { background: #fff; border-radius: 22px; border: 1px solid #DDE3F5; padding: 40px 32px; text-align: center; max-width: 420px; }
+  .sr-success-icon { width: 64px; height: 64px; border-radius: 50%; background: #F0FDF4; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; }
+  .sr-success-title { font-family: 'Sora', sans-serif; font-size: 19px; font-weight: 800; color: #111827; margin-bottom: 8px; }
+  .sr-success-sub { font-size: 13.5px; color: #6B7280; margin-bottom: 4px; }
+
+  .sr-addr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .sr-addr-item { padding: 14px; border-radius: 14px; border: 2px solid #DDE3F5; cursor: pointer; transition: all 0.15s; }
+  .sr-addr-item:hover { border-color: #93C5FD; background: #F8FAFF; }
+  .sr-addr-selected { border-color: #2563EB !important; background: #EFF6FF !important; }
+  .sr-addr-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; margin-bottom: 4px; }
+  .sr-addr-line { font-size: 13px; font-weight: 700; color: #111827; }
+  .sr-default-badge { background: #EFF6FF; color: #1D4ED8; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; border: 1px solid #BFDBFE; white-space: nowrap; flex-shrink: 0; }
+  .sr-addr-city { font-size: 12px; color: #6B7280; margin-bottom: 10px; }
+  .sr-addr-actions { display: flex; gap: 6px; }
+  .sr-addr-edit { display: flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: #3B82F6; background: #EFF6FF; border: none; border-radius: 8px; padding: 5px 10px; cursor: pointer; font-family: inherit; }
+  .sr-addr-del { display: flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: #EF4444; background: #FEF2F2; border: none; border-radius: 8px; padding: 5px 10px; cursor: pointer; font-family: inherit; }
+  .sr-addr-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .sr-add-addr-btn { display: flex; align-items: center; justify-content: center; gap: 7px; border: 2px dashed #BFDBFE; background: transparent; color: #2563EB; font-size: 13px; font-weight: 600; padding: 12px; border-radius: 14px; cursor: pointer; font-family: inherit; }
+  .sr-loc-btn { display: flex; align-items: center; justify-content: center; gap: 7px; background: #F5F3FF; border: 1px solid #DDD6FE; color: #6D28D9; font-size: 13px; font-weight: 600; padding: 12px; border-radius: 14px; cursor: pointer; font-family: inherit; }
+
+  .sr-replace-card { border-color: #C7D2FE; background: linear-gradient(180deg, #FAFBFF 0%, #fff 100%); }
+  .sr-replace-header { display: flex; align-items: center; gap: 14px; padding-bottom: 4px; }
+  .sr-replace-header-icon { width: 44px; height: 44px; border-radius: 13px; background: linear-gradient(135deg, #EEF2FF, #E0E7FF); border: 1px solid #C7D2FE; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+
+  .sr-replace-fields { display: flex; flex-direction: column; gap: 22px; }
+  .sr-field-group { display: flex; flex-direction: column; gap: 10px; }
+  .sr-field-label { font-size: 11px; font-weight: 800; color: #374151; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; }
+  .sr-field-num { width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(135deg, #2563EB, #6366F1); color: #fff; font-size: 10px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+  .sr-number-wrap { display: flex; align-items: center; border: 1.5px solid #DDE3F5; border-radius: 14px; overflow: hidden; background: #FAFBFF; transition: border-color 0.15s; }
+  .sr-number-wrap:focus-within { border-color: #6366F1; background: #fff; box-shadow: 0 0 0 3px rgba(99,102,241,0.08); }
+  .sr-number-prefix { padding: 0 14px; font-size: 14px; font-weight: 700; color: #6366F1; background: #EEF2FF; border-right: 1.5px solid #DDE3F5; height: 48px; display: flex; align-items: center; flex-shrink: 0; }
+  .sr-number-input { flex: 1; border: none; outline: none; padding: 0 14px; font-size: 16px; font-family: 'Sora', sans-serif; font-weight: 700; color: #111827; background: transparent; letter-spacing: 1px; height: 48px; }
+  .sr-number-input::placeholder { font-size: 13px; font-weight: 400; letter-spacing: 0; color: #9CA3AF; font-family: 'Plus Jakarta Sans', sans-serif; }
+  .sr-input-check { width: 28px; height: 28px; border-radius: 50%; background: #10B981; color: #fff; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-right: 10px; flex-shrink: 0; }
+
+  .sr-progress-track { height: 4px; background: #E5E7EB; border-radius: 99px; overflow: hidden; }
+  .sr-progress-fill { height: 100%; background: linear-gradient(90deg, #F59E0B, #EF4444); border-radius: 99px; transition: width 0.2s, background 0.3s; }
+  .sr-progress-fill.sr-progress-ok { background: linear-gradient(90deg, #10B981, #34D399); }
+  .sr-number-meta { display: flex; align-items: center; justify-content: space-between; }
+  .sr-meta-ok { font-size: 11px; font-weight: 700; color: #10B981; }
+  .sr-meta-warn { font-size: 11px; font-weight: 700; color: #F59E0B; }
+  .sr-meta-neutral { font-size: 11px; color: #9CA3AF; font-weight: 500; }
+  .sr-meta-count { font-size: 11px; font-weight: 700; color: #9CA3AF; font-family: 'Sora', sans-serif; }
+
+  .sr-divider { display: flex; align-items: center; gap: 10px; }
+  .sr-divider::before, .sr-divider::after { content: ""; flex: 1; height: 1px; background: #E5E7EB; }
+  .sr-divider-label { font-size: 11px; color: #9CA3AF; font-weight: 600; white-space: nowrap; }
+
+  .sr-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .sr-text-input { border: 1.5px solid #DDE3F5; border-radius: 12px; padding: 12px 14px; font-size: 13.5px; color: #111827; outline: none; font-family: inherit; background: #FAFBFF; transition: border-color 0.2s; }
+  .sr-text-input:focus { border-color: #6366F1; background: #fff; }
+
+  .sr-reason-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sr-reason-card { padding: 12px 8px; border-radius: 14px; border: 2px solid; cursor: pointer; font-family: inherit; font-size: 12px; font-weight: 700; transition: all 0.18s; text-align: center; }
+
+  .sr-timeline { background: linear-gradient(135deg, #F8FAFF, #EEF2FF); border: 1px solid #C7D2FE; border-radius: 16px; padding: 16px 18px; }
+  .sr-timeline-header { font-size: 12px; font-weight: 800; color: #4338CA; margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
+  .sr-timeline-items { display: flex; flex-direction: column; gap: 0; }
+  .sr-timeline-item { display: flex; align-items: flex-start; gap: 12px; position: relative; padding-bottom: 14px; }
+  .sr-timeline-item:last-child { padding-bottom: 0; }
+  .sr-timeline-icon { width: 32px; height: 32px; border-radius: 10px; background: #fff; border: 1px solid #C7D2FE; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; position: relative; z-index: 1; }
+  .sr-timeline-line { position: absolute; left: 15px; top: 32px; bottom: 0; width: 2px; background: linear-gradient(180deg, #C7D2FE, transparent); }
+  .sr-timeline-item:last-child .sr-timeline-line { display: none; }
+  .sr-timeline-content { flex: 1; padding-top: 4px; }
+  .sr-timeline-title { font-size: 13px; font-weight: 700; color: #1E40AF; margin-bottom: 2px; }
+  .sr-timeline-desc { font-size: 11.5px; color: #4B5563; line-height: 1.6; }
+
+  .sr-right { position: sticky; top: 78px; height: fit-content; }
+  .sr-summary-card { background: #fff; border-radius: 22px; border: 1px solid #DDE3F5; padding: 22px; box-shadow: 0 2px 14px rgba(59,130,246,0.06); }
+  .sr-summary-header { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 800; color: #6B7280; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+  .sr-op-badge { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 20px; border: 1px solid; margin-left: auto; }
+  .sr-op-row { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .sr-op-avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; }
+  .sr-op-name { font-size: 15px; font-weight: 700; color: #111827; }
+  .sr-op-sub { font-size: 11px; color: #6B7280; margin-top: 2px; }
+  .sr-spec-box { background: #F8FAFF; border: 1px solid #DDE3F5; border-radius: 14px; padding: 14px; margin-bottom: 16px; }
+  .sr-spec-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; border-bottom: 1px solid #F3F4F6; gap: 10px; }
+  .sr-spec-row:last-child { border-bottom: none; }
+  .sr-spec-key { color: #6B7280; font-weight: 500; flex-shrink: 0; }
+  .sr-spec-val { color: #111827; font-weight: 700; text-align: right; }
+  .sr-price-section { margin-top: 4px; }
+  .sr-price-row { display: flex; justify-content: space-between; font-size: 13.5px; color: #374151; font-weight: 500; padding: 5px 0; }
+  .sr-free-tag { color: #16A34A; font-weight: 700; font-size: 13px; }
+  .sr-price-divider { height: 1px; background: #F3F4F6; margin: 12px 0; }
+  .sr-price-total-row { display: flex; justify-content: space-between; font-size: 18px; font-weight: 800; color: #111827; }
+  .sr-info-section { margin-top: 16px; padding-top: 14px; border-top: 1px solid #F3F4F6; display: flex; flex-direction: column; gap: 8px; }
+  .sr-info-row { display: flex; justify-content: space-between; font-size: 12px; gap: 10px; }
+  .sr-info-key { color: #9CA3AF; flex-shrink: 0; }
+  .sr-info-val { color: #2563EB; font-weight: 600; max-width: 60%; text-align: right; }
+
+  .sr-readiness { margin-top: 14px; background: #F8FAFF; border: 1px solid #E0E7FF; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+  .sr-ready-row { display: flex; align-items: center; gap: 8px; }
+  .sr-ready-dot { width: 8px; height: 8px; border-radius: 50%; background: #E5E7EB; border: 2px solid #D1D5DB; transition: all 0.2s; flex-shrink: 0; }
+  .sr-ready-dot.ok { background: #10B981; border-color: #10B981; box-shadow: 0 0 0 3px #D1FAE5; }
+  .sr-ready-txt { font-size: 12px; color: #9CA3AF; font-weight: 500; }
+  .sr-ready-txt.ok { color: #059669; font-weight: 700; }
+
+  .sr-pay-btn { width: 100%; margin-top: 18px; padding: 14px; background: linear-gradient(135deg, #2563EB, #6366F1); border: none; border-radius: 14px; color: #fff; font-size: 15px; font-weight: 700; font-family: inherit; cursor: pointer; box-shadow: 0 4px 20px rgba(99,102,241,0.35); }
+  .sr-pay-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+  .sr-cancel-btn { width: 100%; margin-top: 8px; padding: 10px; background: none; border: none; color: #9CA3AF; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+
+  @media (max-width: 860px) {
+    .sr-layout { grid-template-columns: 1fr; padding: 14px 12px; gap: 14px; }
+    .sr-right { position: static; }
+    .sr-addr-grid { grid-template-columns: 1fr; }
+    .sr-grid-2 { grid-template-columns: 1fr; }
+    .sr-reason-grid { grid-template-columns: repeat(2, 1fr); }
+    .sr-hero { padding: 16px; }
+    .sr-hero-steps { display: none; }
+  }
+`;export{D as default};
