@@ -1,0 +1,1 @@
+import{H as e,U as t,w as n}from"./index-aRoud-J4.js";const r=()=>e({mutationFn:async e=>(await n.post(`/checkout`,e)).data.data}),i=e=>t({queryKey:[`checkout-session`,e],queryFn:async()=>(await n.get(`/checkout/${e}`)).data.data,enabled:!!e});export{r as n,i as t};
