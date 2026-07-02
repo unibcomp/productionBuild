@@ -1,0 +1,1 @@
+import{U as e,w as t}from"./index-CRTiBSYq.js";const n=n=>e({queryKey:[`allPlans`,n],queryFn:async()=>(await t.get(`/plans`,{params:n})).data.data.results,initialData:[]}),r=n=>e({queryKey:[`plan`,n],queryFn:async()=>{let e=await t.get(`/plans/${n}`);return console.log(`API FULL RESPONSE:`,e.data),e.data.data},enabled:!!n});export{n,r as t};
