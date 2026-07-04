@@ -1,0 +1,312 @@
+import{t as e}from"./chevron-right-DjEyjCo9.js";import{t}from"./clock-cp7IgZKV.js";import{t as n}from"./message-square-znWrI4ME.js";import{t as r}from"./package-DPoWDh3q.js";import{t as i}from"./shield-alert-Ctig3l6S.js";import{t as a}from"./wifi-BkgPEGHE.js";import{t as o}from"./zap-C4mKX2Lx.js";import{G as s,H as c,J as ee,L as l,N as u,P as d,V as f,W as p,Y as m,Z as h,tt as g,w as _,z as v}from"./index-biouuIGP.js";import{d as y,f as b,p as te,r as ne,s as x,t as S,u as C}from"./AddressModal-6lXTQtxP.js";import{t as w}from"./useUser-BqwBbK3M.js";import{t as T}from"./useEsim-Ci6AT9b2.js";var E=g(h(),1);const re=()=>c({mutationFn:async e=>{let t=localStorage.getItem(`token`),n={};return t&&(n.Authorization=`Bearer ${t}`),(await _.post(`/esim/order`,e,{headers:n})).data.data}});var D=s(),O=`
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+.eb-root { min-height: 100vh; background: #F0F4FF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #111827; }
+
+/* ── Loading ── */
+.eb-loading { min-height: 100vh; background: #F0F4FF; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; }
+.eb-spinner { width: 40px; height: 40px; border-radius: 50%; border: 3px solid #DBEAFE; border-top-color: #2563EB; animation: eb-spin 0.75s linear infinite; }
+@keyframes eb-spin { to { transform: rotate(360deg); } }
+@keyframes eb-fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes eb-overlayIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes eb-modalSlide { from { opacity: 0; transform: translateY(28px) scale(0.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+/* ── Nav ── */
+.eb-nav {
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(240,244,255,0.92); backdrop-filter: blur(20px);
+  border-bottom: 1px solid #DDE3F5;
+  height: 58px; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px;
+}
+.eb-back-btn {
+  display: flex; align-items: center; gap: 6px;
+  background: #fff; border: 1px solid #DDE3F5; border-radius: 10px;
+  padding: 7px 14px; font-size: 13px; font-weight: 600; color: #4B5563;
+  cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.eb-back-btn:hover { border-color: #2563EB; color: #2563EB; background: #EFF6FF; }
+.eb-nav-center { display: flex; align-items: center; gap: 8px; }
+.eb-nav-icon { font-size: 18px; }
+.eb-nav-title { font-family: 'Sora', sans-serif; font-size: 15px; font-weight: 800; color: #111827; letter-spacing: -0.3px; }
+
+/* ── eSIM Hero Banner ── */
+.eb-hero {
+  background: linear-gradient(135deg, #0F172A 0%, #2563EB 55%, #6366F1 100%);
+  padding: 20px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+}
+.eb-hero-left { display: flex; align-items: center; gap: 14px; }
+.eb-hero-icon {
+  width: 48px; height: 48px; border-radius: 14px;
+  background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0;
+}
+.eb-hero-title { font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+.eb-hero-sub { font-size: 12px; color: rgba(255,255,255,0.75); }
+.eb-hero-steps { display: flex; align-items: center; gap: 6px; }
+.eb-hero-step { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.eb-hero-step-num {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.35);
+  color: #fff; font-size: 10px; font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+}
+.eb-hero-step-lbl { font-size: 10px; color: rgba(255,255,255,0.7); font-weight: 600; white-space: nowrap; }
+
+/* ── Layout ── */
+.eb-layout {
+  display: grid; grid-template-columns: 1fr 380px; gap: 20px;
+  padding: 20px 24px; max-width: 1100px; margin: 0 auto;
+}
+.eb-left { display: flex; flex-direction: column; gap: 16px; animation: eb-fadeUp 0.3s ease both; }
+
+/* ── Card ── */
+.eb-card {
+  background: #fff; border-radius: 22px; border: 1px solid #DDE3F5;
+  padding: 22px; box-shadow: 0 2px 14px rgba(59,130,246,0.06);
+}
+.eb-card-step { font-size: 10px; font-weight: 800; color: #2563EB; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px; }
+.eb-card-title { font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 800; color: #111827; margin-bottom: 4px; }
+.eb-card-sub { font-size: 13px; color: #9CA3AF; margin-bottom: 18px; }
+
+/* ── Auto-fill badge ── */
+.eb-autofill-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 12px; border-radius: 8px;
+  background: #ECFDF5; border: 1px solid #A7F3D0;
+  color: #059669; font-size: 12px; font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* ── Fields grid ── */
+.eb-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.eb-field-full { grid-column: 1 / -1; }
+.eb-phone-wrap { display: grid; grid-template-columns: 160px 1fr; gap: 10px; }
+.eb-select {
+  width: 100%; height: 48px;
+  background: #FAFBFF; border: 1.5px solid #DDE3F5; border-radius: 12px;
+  padding: 0 14px; font-size: 13px; font-weight: 600; color: #111827;
+  font-family: 'Plus Jakarta Sans', sans-serif; outline: none;
+  cursor: pointer; appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 12px center;
+  padding-right: 32px;
+  transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+.eb-select:focus {
+  border-color: #6366F1; background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.08);
+}
+.eb-select-autofilled { border-color: #6EE7B7 !important; background-color: #F0FDF4 !important; }
+
+.eb-label {
+  display: block; font-size: 11px; font-weight: 800;
+  color: #374151; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 7px;
+}
+.eb-input {
+  width: 100%; height: 48px;
+  background: #FAFBFF; border: 1.5px solid #DDE3F5; border-radius: 12px;
+  padding: 0 14px; font-size: 14px; font-weight: 500; color: #111827;
+  font-family: 'Plus Jakarta Sans', sans-serif; outline: none;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.eb-input::placeholder { color: #C4C9D4; }
+.eb-input:focus {
+  border-color: #6366F1; background: #fff;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.08);
+}
+.eb-input-autofilled {
+  border-color: #6EE7B7 !important;
+  background: #F0FDF4 !important;
+}
+
+/* ── Address (matches BuyNow) ── */
+.eb-addr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.eb-addr-item { padding: 14px; border-radius: 14px; border: 2px solid #DDE3F5; cursor: pointer; transition: all 0.15s; }
+.eb-addr-item:hover { border-color: #93C5FD; background: #F8FAFF; }
+.eb-addr-selected { border-color: #2563EB !important; background: #EFF6FF !important; }
+.eb-addr-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; margin-bottom: 4px; }
+.eb-addr-line { font-size: 13px; font-weight: 700; color: #111827; }
+.eb-default-badge { background: #EFF6FF; color: #1D4ED8; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; border: 1px solid #BFDBFE; white-space: nowrap; flex-shrink: 0; }
+.eb-addr-city { font-size: 12px; color: #6B7280; margin-bottom: 10px; }
+.eb-addr-actions { display: flex; gap: 6px; }
+.eb-addr-edit { display: flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: #2563EB; background: #EFF6FF; border: none; border-radius: 8px; padding: 5px 10px; cursor: pointer; font-family: inherit; transition: background 0.13s; }
+.eb-addr-edit:hover { background: #DBEAFE; }
+.eb-addr-del { display: flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: #EF4444; background: #FEF2F2; border: none; border-radius: 8px; padding: 5px 10px; cursor: pointer; font-family: inherit; transition: background 0.13s; }
+.eb-addr-del:hover { background: #FEE2E2; }
+.eb-addr-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.eb-add-addr-btn { display: flex; align-items: center; justify-content: center; gap: 7px; border: 2px dashed #BFDBFE; background: transparent; color: #2563EB; font-size: 13px; font-weight: 600; padding: 12px; border-radius: 14px; cursor: pointer; font-family: inherit; transition: background 0.15s; }
+.eb-add-addr-btn:hover { background: #EFF6FF; }
+.eb-loc-btn { display: flex; align-items: center; justify-content: center; gap: 7px; background: #F5F3FF; border: 1px solid #DDD6FE; color: #6D28D9; font-size: 13px; font-weight: 600; padding: 12px; border-radius: 14px; cursor: pointer; font-family: inherit; transition: background 0.15s; }
+.eb-loc-btn:hover { background: #EDE9FE; }
+.eb-addr-empty { font-size: 13px; color: #9CA3AF; padding: 16px 0; text-align: center; }
+
+/* ── Payment section ── */
+.eb-pay-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.eb-pay-item {
+  padding: 13px; text-align: center; border-radius: 12px;
+  border: 2px solid #DDE3F5; font-size: 13px; font-weight: 600;
+  color: #6B7280; cursor: pointer; transition: all 0.15s; position: relative;
+}
+.eb-pay-selected { border-color: #2563EB !important; background: #EFF6FF !important; color: #2563EB !important; }
+.eb-pay-disabled { opacity: 0.45; cursor: not-allowed; }
+.eb-coming-soon { display: block; font-size: 10px; font-weight: 700; color: #9CA3AF; margin-top: 2px; }
+.eb-pay-note { font-size: 12px; color: #9CA3AF; }
+
+/* ── Right: Summary card ── */
+.eb-right { position: sticky; top: 78px; height: fit-content; animation: eb-fadeUp 0.35s ease both; }
+.eb-summary-card {
+  background: #fff; border-radius: 22px; border: 1px solid #DDE3F5;
+  padding: 22px; box-shadow: 0 2px 14px rgba(59,130,246,0.06);
+}
+.eb-summary-header {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 800; color: #6B7280;
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;
+}
+.eb-esim-badge {
+  background: #EFF6FF; color: #1D4ED8; font-size: 10px; font-weight: 700;
+  padding: 3px 10px; border-radius: 20px; border: 1px solid #BFDBFE; margin-left: auto;
+}
+
+
+.eb-kyc-banner { margin-top: 14px; display: flex; align-items: center; gap: 12px; background: linear-gradient(135deg, #FFFBEB, #FEF3C7); border: 1.5px solid #FDE68A; border-radius: 14px; padding: 13px 14px; cursor: pointer; transition: all 0.15s; }
+.eb-kyc-banner:hover { border-color: #F59E0B; box-shadow: 0 4px 14px rgba(245,158,11,0.18); transform: translateY(-1px); }
+.eb-kyc-banner-icon { width: 34px; height: 34px; border-radius: 10px; background: #fff; border: 1px solid #FDE68A; color: #B45309; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.eb-kyc-banner-text { flex: 1; }
+.eb-kyc-banner-title { font-size: 13px; font-weight: 800; color: #92400E; }
+.eb-kyc-banner-sub { font-size: 11px; color: #B45309; margin-top: 1px; }
+.eb-kyc-banner-arrow { color: #B45309; flex-shrink: 0; }
+
+/* ── Plan info in summary ── */
+.eb-plan-name-block { margin-bottom: 14px; }
+.eb-plan-name { font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 800; color: #111827; margin-bottom: 4px; line-height: 1.2; }
+.eb-plan-network { font-size: 12px; color: #9CA3AF; font-weight: 500; }
+
+.eb-spec-box {
+  background: #F8FAFF; border: 1px solid #DDE3F5;
+  border-radius: 14px; padding: 14px; margin-bottom: 16px;
+}
+.eb-spec-row {
+  display: flex; justify-content: space-between;
+  padding: 7px 0; font-size: 13px;
+  border-bottom: 1px solid #F3F4F6;
+}
+.eb-spec-row:last-child { border-bottom: none; }
+.eb-spec-key { color: #6B7280; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+.eb-spec-val { color: #111827; font-weight: 700; }
+.eb-spec-val-green { color: #059669 !important; }
+
+/* ── Price breakdown ── */
+.eb-price-section { margin-top: 4px; }
+.eb-price-row { display: flex; justify-content: space-between; font-size: 13.5px; color: #374151; font-weight: 500; padding: 5px 0; }
+.eb-price-divider { height: 1px; background: #F3F4F6; margin: 12px 0; }
+.eb-price-total-row { display: flex; justify-content: space-between; font-size: 18px; font-weight: 800; color: #111827; }
+
+/* ── Info rows ── */
+.eb-info-section { margin-top: 16px; padding-top: 14px; border-top: 1px solid #F3F4F6; display: flex; flex-direction: column; gap: 8px; }
+.eb-info-row { display: flex; justify-content: space-between; font-size: 12px; }
+.eb-info-key { color: #9CA3AF; }
+.eb-info-val { color: #2563EB; font-weight: 600; max-width: 55%; text-align: right; }
+
+/* ── Countries ── */
+.eb-countries-head {
+  font-size: 10px; font-weight: 800; color: #9CA3AF;
+  text-transform: uppercase; letter-spacing: 0.07em;
+  margin-bottom: 8px; margin-top: 14px;
+}
+.eb-countries-wrap { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
+.eb-ctry {
+  padding: 4px 10px; border-radius: 8px;
+  background: #F0F4FF; border: 1px solid #DDE3F5;
+  font-size: 11.5px; font-weight: 600; color: #4B5563;
+}
+
+/* ── FUP note ── */
+.eb-fup {
+  background: #FFFBEB; border: 1px solid #FDE68A;
+  border-radius: 12px; padding: 10px 12px;
+  font-size: 12px; color: #92400E; font-weight: 500;
+  display: flex; gap: 8px; align-items: flex-start;
+  margin-bottom: 14px; line-height: 1.5;
+}
+
+/* ── CTA Button ── */
+.eb-pay-btn {
+  width: 100%; margin-top: 18px; padding: 14px;
+  background: linear-gradient(135deg, #2563EB, #6366F1);
+  border: none; border-radius: 14px; color: #fff;
+  font-size: 15px; font-weight: 700; font-family: inherit;
+  cursor: pointer; box-shadow: 0 4px 20px rgba(99,102,241,0.35);
+  transition: opacity 0.15s, transform 0.12s;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.eb-pay-btn:hover:not(:disabled) { opacity: 0.92; transform: translateY(-1px); }
+.eb-pay-btn:active:not(:disabled) { transform: scale(0.97); }
+.eb-pay-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.eb-pay-spinner {
+  width: 16px; height: 16px; border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff;
+  animation: eb-spin 0.7s linear infinite;
+}
+.eb-cancel-btn {
+  width: 100%; margin-top: 8px; padding: 10px;
+  background: none; border: none; color: #9CA3AF;
+  font-size: 13px; font-weight: 600; cursor: pointer;
+  font-family: inherit; transition: color 0.15s;
+}
+.eb-cancel-btn:hover { color: #4B5563; }
+.eb-secure-note {
+  text-align: center; margin-top: 6px;
+  font-size: 11px; color: #9CA3AF; font-weight: 500;
+  display: flex; align-items: center; justify-content: center; gap: 4px;
+}
+
+/* ── Login Modal ── */
+.eb-overlay {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(0,0,0,0.5); backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center;
+  animation: eb-overlayIn 0.2s ease; padding: 20px;
+}
+.eb-modal {
+  background: #fff; border: 1px solid #DDE3F5;
+  border-radius: 24px; padding: 36px 32px;
+  max-width: 400px; width: 100%; text-align: center;
+  animation: eb-modalSlide 0.25s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+.eb-modal-emoji { font-size: 48px; margin-bottom: 16px; }
+.eb-modal-title { font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 800; color: #111827; margin-bottom: 8px; }
+.eb-modal-sub { font-size: 14px; color: #6B7280; line-height: 1.6; margin-bottom: 28px; }
+.eb-modal-btn {
+  width: 100%; height: 52px; border: none; border-radius: 14px;
+  background: linear-gradient(135deg, #2563EB, #6366F1);
+  color: #fff; font-size: 15px; font-weight: 700;
+  font-family: inherit; cursor: pointer; margin-bottom: 10px; transition: opacity 0.15s;
+}
+.eb-modal-btn:hover { opacity: 0.9; }
+.eb-modal-dismiss {
+  background: none; border: none; font-size: 13px; color: #9CA3AF;
+  cursor: pointer; font-family: inherit; font-weight: 600; padding: 6px;
+  transition: color 0.15s;
+}
+.eb-modal-dismiss:hover { color: #6B7280; }
+
+/* ── Responsive ── */
+@media (max-width: 860px) {
+  .eb-layout { grid-template-columns: 1fr; padding: 14px 12px; gap: 14px; }
+  .eb-right { position: static; }
+  .eb-fields { grid-template-columns: 1fr; }
+  .eb-field-full { grid-column: 1; }
+  .eb-phone-wrap { grid-template-columns: 1fr; }
+  .eb-pay-grid { grid-template-columns: 1fr 1fr; }
+  .eb-addr-grid { grid-template-columns: 1fr; }
+  .eb-hero { padding: 16px; }
+  .eb-hero-steps { display: none; }
+  .eb-nav { padding: 0 14px; }
+}
+`,k=[{code:`IN`,dialCode:`+91`,label:`🇮🇳 India`},{code:`AE`,dialCode:`+971`,label:`🇦🇪 UAE`},{code:`US`,dialCode:`+1`,label:`🇺🇸 USA`},{code:`GB`,dialCode:`+44`,label:`🇬🇧 UK`},{code:`TH`,dialCode:`+66`,label:`🇹🇭 Thailand`},{code:`SG`,dialCode:`+65`,label:`🇸🇬 Singapore`},{code:`JP`,dialCode:`+81`,label:`🇯🇵 Japan`},{code:`AU`,dialCode:`+61`,label:`🇦🇺 Australia`},{code:`DE`,dialCode:`+49`,label:`🇩🇪 Germany`},{code:`FR`,dialCode:`+33`,label:`🇫🇷 France`},{code:`IT`,dialCode:`+39`,label:`🇮🇹 Italy`},{code:`MY`,dialCode:`+60`,label:`🇲🇾 Malaysia`},{code:`ID`,dialCode:`+62`,label:`🇮🇩 Indonesia`}],A=({label:e,name:t,value:n,onChange:r,placeholder:i=``,autoFilled:a=!1,type:o=`text`,fullWidth:s=!1})=>(0,D.jsxs)(`div`,{className:s?`eb-field-full`:``,children:[(0,D.jsx)(`label`,{className:`eb-label`,children:e}),(0,D.jsx)(`input`,{type:o,name:t,value:n,onChange:r,placeholder:i,className:`eb-input${a?` eb-input-autofilled`:``}`})]});function j(){let s=ee(),{planId:c}=m(),h=p(),{data:g,isLoading:_}=w(),{data:j,isLoading:M}=T(c),{mutate:N,isPending:P}=re(),{data:F=[]}=b(),I=te(),[L,R]=(0,E.useState)(!1),[z,B]=(0,E.useState)(null),[V,H]=(0,E.useState)(null),[U,W]=(0,E.useState)(!1);(0,E.useEffect)(()=>{F?.length>0&&H((F.find(e=>e.isDefault)||F[0])._id)},[F]);let G=F.find(e=>e._id===V),[K,q]=(0,E.useState)(!1),[J,Y]=(0,E.useState)([]),[ie]=(0,E.useState)(`COD`),[ae,oe]=(0,E.useState)(!1),[X,Z]=(0,E.useState)({firstName:``,lastName:``,email:``,countryCode:`IN`,phoneNumber:``});(0,E.useEffect)(()=>{!_&&!g&&q(!0)},[g,_]),(0,E.useEffect)(()=>{if(!g)return;let e=[],t={},n=(g.fullName||``).trim().split(` `);if(n[0]&&(t.firstName=n[0],e.push(`firstName`)),n[1]&&(t.lastName=n.slice(1).join(` `),e.push(`lastName`)),g.email&&(t.email=g.email,e.push(`email`)),g.phone&&(t.phoneNumber=g.phone,e.push(`phoneNumber`)),g.countryCode){let n=k.find(e=>e.code===g.countryCode||e.dialCode===g.countryCode);t.countryCode=n?n.code:`IN`,e.push(`countryCode`)}g.countryCode&&(t.countryCode=g.countryCode,e.push(`countryCode`)),Z(e=>({...e,...t})),Y(e)},[g]);let Q=e=>{let{name:t,value:n}=e.target;Z(e=>({...e,[t]:n})),Y(e=>e.filter(e=>e!==t))},se=()=>{if(!g){q(!0);return}if(c){if(!X.firstName.trim())return f.error(`Enter your first name`);if(!X.lastName.trim())return f.error(`Enter your last name`);if(X.phoneNumber&&X.phoneNumber.length!==10)return f.error(`Enter a valid 10-digit phone number`);if(!X.email.trim())return f.error(`Enter your email address`);if(!V)return f.error(`Select a billing address`);N({planId:c,firstName:X.firstName,lastName:X.lastName,email:X.email,countryCode:X.countryCode,phoneNumber:X.phoneNumber,addressId:V,address:G?.street||``,city:G?.city||``,state:G?.state||``,pincode:G?.pincode||``,paymentMethod:`COD`},{onSuccess:e=>{e?.isKycRequired?(f.success(`KYC required — redirecting…`),window.open(e.ekycLink,`_blank`)):f.success(`eSIM order placed 📱`),h.invalidateQueries({queryKey:[`orders`]}),s(`/profile?tab=orders`)},onError:e=>{let t=e?.response?.data?.message||``,n=t.toLowerCase();if(n.includes(`kyc`)||n.includes(`aadhaar`)||n.includes(`pan`)||n.includes(`verification`)){oe(!0);return}f.error(t||`Order failed ❌`)}})}},ce=j?.network?.includes(`5G`)?`5G`:j?.network?.includes(`4G`)?`4G LTE`:j?.network,$=j?.countries??[];return _||M?(0,D.jsxs)(D.Fragment,{children:[(0,D.jsx)(`style`,{children:O}),(0,D.jsxs)(`div`,{className:`eb-loading`,children:[(0,D.jsx)(`div`,{className:`eb-spinner`}),(0,D.jsxs)(`p`,{style:{fontSize:13,fontWeight:600,color:`#9CA3AF`},children:[`Loading`,M?` plan`:``,`…`]})]})]}):(0,D.jsxs)(D.Fragment,{children:[(0,D.jsx)(`style`,{children:O}),(0,D.jsxs)(`div`,{className:`eb-root`,children:[K&&(0,D.jsx)(`div`,{className:`eb-overlay`,children:(0,D.jsxs)(`div`,{className:`eb-modal`,children:[(0,D.jsx)(`div`,{className:`eb-modal-emoji`,children:`🔐`}),(0,D.jsx)(`div`,{className:`eb-modal-title`,children:`Login Required`}),(0,D.jsx)(`div`,{className:`eb-modal-sub`,children:`You need to be logged in to purchase an eSIM plan. Login to continue and your details will be auto-filled.`}),(0,D.jsx)(`button`,{className:`eb-modal-btn`,onClick:()=>{window.dispatchEvent(new CustomEvent(`open-login-modal`)),q(!1)},children:`Login to Continue`}),(0,D.jsx)(`button`,{className:`eb-modal-dismiss`,onClick:()=>q(!1),children:`Browse as guest`})]})}),(0,D.jsxs)(`nav`,{className:`eb-nav`,children:[(0,D.jsxs)(`button`,{className:`eb-back-btn`,onClick:()=>s(-1),children:[(0,D.jsx)(v,{size:14}),` Back`]}),(0,D.jsxs)(`div`,{className:`eb-nav-center`,children:[(0,D.jsx)(`span`,{className:`eb-nav-icon`,children:`📱`}),(0,D.jsx)(`span`,{className:`eb-nav-title`,children:`Get eSIM`})]}),(0,D.jsx)(`div`,{style:{width:72}})]}),(0,D.jsxs)(`div`,{className:`eb-hero`,children:[(0,D.jsxs)(`div`,{className:`eb-hero-left`,children:[(0,D.jsx)(`div`,{className:`eb-hero-icon`,children:`📱`}),(0,D.jsxs)(`div`,{children:[(0,D.jsx)(`div`,{className:`eb-hero-title`,children:`eSIM Activation`}),(0,D.jsx)(`div`,{className:`eb-hero-sub`,children:`No physical SIM · Instant digital activation · Works on any eSIM device`})]})]}),(0,D.jsx)(`div`,{className:`eb-hero-steps`,children:[`Place Order`,`Get QR Code`,`Scan & Install`,`Active`].map((e,t)=>(0,D.jsxs)(`div`,{className:`eb-hero-step`,children:[(0,D.jsx)(`div`,{className:`eb-hero-step-num`,children:t+1}),(0,D.jsx)(`div`,{className:`eb-hero-step-lbl`,children:e})]},e))})]}),(0,D.jsxs)(`div`,{className:`eb-layout`,children:[(0,D.jsxs)(`div`,{className:`eb-left`,children:[(0,D.jsxs)(`div`,{className:`eb-card`,children:[(0,D.jsx)(`div`,{className:`eb-card-step`,children:`Step 1`}),(0,D.jsx)(`h2`,{className:`eb-card-title`,children:g?`Hey ${g.fullName?.split(` `)[0]||`there`} 👋`:`Personal Information`}),(0,D.jsx)(`p`,{className:`eb-card-sub`,children:`Your name and contact details for the eSIM`}),J.length>0&&(0,D.jsx)(`div`,{className:`eb-autofill-badge`,children:`✓ Details auto-filled from your account`}),(0,D.jsxs)(`div`,{className:`eb-fields`,children:[(0,D.jsx)(A,{label:`First Name`,name:`firstName`,value:X.firstName,onChange:Q,placeholder:`John`,autoFilled:J.includes(`firstName`)}),(0,D.jsx)(A,{label:`Last Name`,name:`lastName`,value:X.lastName,onChange:Q,placeholder:`Doe`,autoFilled:J.includes(`lastName`)}),(0,D.jsx)(`div`,{className:`eb-field-full`,children:(0,D.jsx)(A,{label:`Email Address`,name:`email`,value:X.email,onChange:Q,placeholder:`john@example.com`,type:`email`,fullWidth:!0,autoFilled:J.includes(`email`)})}),(0,D.jsxs)(`div`,{className:`eb-field-full`,children:[(0,D.jsx)(`label`,{className:`eb-label`,children:`Phone Number`}),(0,D.jsxs)(`div`,{className:`eb-phone-wrap`,children:[(0,D.jsx)(`select`,{name:`countryCode`,value:X.countryCode,onChange:e=>{Z(t=>({...t,countryCode:e.target.value})),Y(e=>e.filter(e=>e!==`countryCode`))},className:`eb-select${J.includes(`countryCode`)?` eb-select-autofilled`:``}`,children:k.map(e=>(0,D.jsxs)(`option`,{value:e.code,children:[e.label,` (`,e.dialCode,`)`]},e.code))}),(0,D.jsx)(`input`,{type:`tel`,name:`phoneNumber`,inputMode:`numeric`,value:X.phoneNumber,onChange:e=>{let t=e.target.value.replace(/\D/g,``).slice(0,10);Z(e=>({...e,phoneNumber:t})),Y(e=>e.filter(e=>e!==`phoneNumber`))},maxLength:10,className:`eb-input${J.includes(`phoneNumber`)?` eb-input-autofilled`:``}`,placeholder:`9876543210`})]})]})]})]}),(0,D.jsxs)(`div`,{className:`eb-card`,children:[(0,D.jsx)(`div`,{className:`eb-card-step`,children:`Step 2`}),(0,D.jsx)(`h2`,{className:`eb-card-title`,children:`Billing Address`}),(0,D.jsx)(`p`,{className:`eb-card-sub`,children:`Select or add a billing address`}),(0,D.jsx)(`div`,{className:`eb-addr-grid`,children:F.map(e=>(0,D.jsxs)(`div`,{className:`eb-addr-item${V===e._id?` eb-addr-selected`:``}`,onClick:()=>H(e._id),children:[(0,D.jsxs)(`div`,{className:`eb-addr-top`,children:[(0,D.jsxs)(`p`,{className:`eb-addr-line`,children:[e.houseNo,`, `,e.street]}),e.isDefault&&(0,D.jsx)(`span`,{className:`eb-default-badge`,children:`Default`})]}),(0,D.jsxs)(`p`,{className:`eb-addr-city`,children:[e.city,`, `,e.state,` — `,e.pincode]}),(0,D.jsxs)(`div`,{className:`eb-addr-actions`,children:[(0,D.jsxs)(`button`,{className:`eb-addr-edit`,onClick:t=>{t.stopPropagation(),B(e),R(!0)},children:[(0,D.jsx)(ne,{size:11}),` Edit`]}),(0,D.jsxs)(`button`,{className:`eb-addr-del`,onClick:t=>{t.stopPropagation(),I.mutate(e._id,{onSuccess:()=>h.invalidateQueries({queryKey:[`address`]})})},children:[(0,D.jsx)(y,{size:11}),` Remove`]})]})]},e._id))}),(0,D.jsxs)(`div`,{className:`eb-addr-btns`,children:[(0,D.jsxs)(`button`,{className:`eb-add-addr-btn`,onClick:()=>{B(null),R(!0)},children:[(0,D.jsx)(C,{size:14}),`Add Address`]}),(0,D.jsxs)(`button`,{className:`eb-loc-btn`,onClick:()=>{B(null),W(!0),R(!0)},children:[(0,D.jsx)(x,{size:14}),`Use My Location`]})]})]}),(0,D.jsxs)(`div`,{className:`eb-card`,children:[(0,D.jsx)(`div`,{className:`eb-card-step`,children:`Step 3`}),(0,D.jsx)(`h2`,{className:`eb-card-title`,children:`Payment Method`}),(0,D.jsx)(`p`,{className:`eb-card-sub`,children:`How would you like to pay?`}),(0,D.jsx)(`div`,{className:`eb-pay-grid`,children:[`UPI`,`Card`,`Net Banking`,`COD`].map(e=>{let t=e===`COD`;return(0,D.jsxs)(`div`,{className:`eb-pay-item${t&&ie===e?` eb-pay-selected`:``}${t?``:` eb-pay-disabled`}`,children:[e,!t&&(0,D.jsx)(`span`,{className:`eb-coming-soon`,children:`Soon`})]},e)})}),(0,D.jsx)(`p`,{className:`eb-pay-note`,children:`Only Cash on Delivery is available right now.`})]})]}),(0,D.jsx)(`div`,{className:`eb-right`,children:(0,D.jsxs)(`div`,{className:`eb-summary-card`,children:[(0,D.jsxs)(`div`,{className:`eb-summary-header`,children:[(0,D.jsx)(r,{size:15}),(0,D.jsx)(`span`,{children:`Order Summary`}),(0,D.jsx)(`span`,{className:`eb-esim-badge`,children:`📱 eSIM`})]}),j&&(0,D.jsxs)(D.Fragment,{children:[(0,D.jsxs)(`div`,{className:`eb-plan-name-block`,children:[(0,D.jsx)(`div`,{className:`eb-plan-name`,children:j.name}),(0,D.jsx)(`div`,{className:`eb-plan-network`,children:j.network})]}),(0,D.jsx)(`div`,{className:`eb-spec-box`,children:[{icon:(0,D.jsx)(a,{size:11}),label:`Data`,val:j.isUnlimited?`Unlimited`:j.dataLimit,green:j.isUnlimited},{icon:(0,D.jsx)(t,{size:11}),label:`Validity`,val:j.validityDays?`${j.validityDays} Days`:null},{icon:(0,D.jsx)(d,{size:11}),label:`Calls`,val:j.callInSeconds==null?null:`${j.callInSeconds}s`},{icon:(0,D.jsx)(n,{size:11}),label:`SMS / Day`,val:j.sms==null?null:`${j.sms}`},{icon:(0,D.jsx)(o,{size:11}),label:`Network`,val:ce},{icon:(0,D.jsx)(l,{size:11}),label:`Coverage`,val:j.coverage}].filter(e=>e.val).map((e,t)=>(0,D.jsxs)(`div`,{className:`eb-spec-row`,children:[(0,D.jsxs)(`span`,{className:`eb-spec-key`,children:[e.icon,` `,e.label]}),(0,D.jsx)(`span`,{className:`eb-spec-val${e.green?` eb-spec-val-green`:``}`,children:e.val})]},t))}),(0,D.jsxs)(`div`,{className:`eb-price-section`,children:[(0,D.jsxs)(`div`,{className:`eb-price-row`,children:[(0,D.jsx)(`span`,{children:`Plan Price`}),(0,D.jsxs)(`span`,{children:[`₹`,j.price]})]}),(0,D.jsxs)(`div`,{className:`eb-price-row`,children:[(0,D.jsx)(`span`,{children:`Delivery`}),(0,D.jsx)(`span`,{style:{color:`#16A34A`,fontWeight:700},children:`FREE`})]}),(0,D.jsx)(`div`,{className:`eb-price-divider`}),(0,D.jsxs)(`div`,{className:`eb-price-total-row`,children:[(0,D.jsx)(`span`,{children:`Total`}),(0,D.jsxs)(`span`,{children:[`₹`,j.price]})]})]}),j.fupPolicy&&(0,D.jsxs)(`div`,{className:`eb-fup`,style:{marginTop:14},children:[(0,D.jsx)(`span`,{children:`⚡`}),(0,D.jsx)(`span`,{children:j.fupPolicy})]}),$.length>0&&(0,D.jsxs)(D.Fragment,{children:[(0,D.jsxs)(`div`,{className:`eb-countries-head`,children:[$.length,` Countr`,$.length===1?`y`:`ies`,` Covered`]}),(0,D.jsxs)(`div`,{className:`eb-countries-wrap`,children:[$.slice(0,10).map(e=>(0,D.jsxs)(`div`,{className:`eb-ctry`,children:[`🏳️ `,e.name]},e._id)),$.length>10&&(0,D.jsxs)(`div`,{className:`eb-ctry`,children:[`+`,$.length-10,` more`]})]})]}),(0,D.jsxs)(`div`,{className:`eb-info-section`,children:[(0,D.jsxs)(`div`,{className:`eb-info-row`,children:[(0,D.jsx)(`span`,{className:`eb-info-key`,children:`Bill to`}),(0,D.jsx)(`span`,{className:`eb-info-val`,children:G?`${G.houseNo}, ${G.street}`:`—`})]}),(0,D.jsxs)(`div`,{className:`eb-info-row`,children:[(0,D.jsx)(`span`,{className:`eb-info-key`,children:`Order Type`}),(0,D.jsx)(`span`,{className:`eb-info-val`,children:`eSIM — Digital`})]}),(0,D.jsxs)(`div`,{className:`eb-info-row`,children:[(0,D.jsx)(`span`,{className:`eb-info-key`,children:`Payment`}),(0,D.jsx)(`span`,{className:`eb-info-val`,children:`Cash on Delivery`})]}),(0,D.jsxs)(`div`,{className:`eb-info-row`,children:[(0,D.jsx)(`span`,{className:`eb-info-key`,children:`Delivery`}),(0,D.jsx)(`span`,{className:`eb-info-val`,children:`QR Code via Email`})]})]})]}),ae&&(0,D.jsxs)(`div`,{className:`eb-kyc-banner`,onClick:()=>s(`/profile?tab=kyc`),children:[(0,D.jsx)(`div`,{className:`eb-kyc-banner-icon`,children:(0,D.jsx)(i,{size:18})}),(0,D.jsxs)(`div`,{className:`eb-kyc-banner-text`,children:[(0,D.jsx)(`div`,{className:`eb-kyc-banner-title`,children:`Complete Aadhaar & PAN Verification`}),(0,D.jsx)(`div`,{className:`eb-kyc-banner-sub`,children:`Required before placing this order`})]}),(0,D.jsx)(e,{size:18,className:`eb-kyc-banner-arrow`})]}),(0,D.jsx)(`button`,{className:`eb-pay-btn`,onClick:se,disabled:P,children:P?(0,D.jsxs)(D.Fragment,{children:[(0,D.jsx)(`div`,{className:`eb-pay-spinner`}),` Placing Order…`]}):(0,D.jsxs)(D.Fragment,{children:[`Activate eSIM — ₹`,j?.price??`—`,` →`]})}),(0,D.jsx)(`button`,{className:`eb-cancel-btn`,onClick:()=>s(-1),children:`Cancel`}),(0,D.jsxs)(`div`,{className:`eb-secure-note`,children:[(0,D.jsx)(u,{size:12}),` Secure checkout · Instant eSIM activation`]})]})})]})]}),L&&(0,D.jsx)(S,{close:()=>{R(!1),B(null),W(!1)},editingAddress:z,autoUseLocation:U})]})}export{j as default};
