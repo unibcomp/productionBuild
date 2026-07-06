@@ -1,0 +1,1 @@
+import{T as e,q as t}from"./index-CRi_WxQy.js";const n=()=>t({queryKey:[`plan-tags`],queryFn:async()=>(await e.get(`/plan-tags`)).data.data});export{n as t};
