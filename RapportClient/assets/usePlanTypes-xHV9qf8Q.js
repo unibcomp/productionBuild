@@ -1,0 +1,1 @@
+import{T as e,q as t}from"./index-c9fj8wbx.js";const n=()=>t({queryKey:[`plan-types`],queryFn:async()=>(await e.get(`/plan-types`)).data.data});export{n as t};
