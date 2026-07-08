@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f66e4b2.css",
-    "main.js": "/static/js/main.8245726a.js",
+    "main.css": "/static/css/main.f514259f.css",
+    "main.js": "/static/js/main.9d64f345.js",
     "static/media/car.mp4": "/static/media/car.d8aa0ab5b035de226280.mp4",
     "static/media/car3.mp4": "/static/media/car3.77e9d4148d3b72da2f97.mp4",
     "static/media/fin.jpeg": "/static/media/fin.58e1e08b6809870d6377.jpeg",
     "static/media/3img.jpeg": "/static/media/3img.89fa4e50874b04737a54.jpeg",
     "static/media/4img.jpeg": "/static/media/4img.89fa4e50874b04737a54.jpeg",
+    "static/media/marketplace.jpg": "/static/media/marketplace.851ace442a5a57e92073.jpg",
+    "static/media/logistics.jpg": "/static/media/logistics.a420537428df13b072a8.jpg",
     "static/media/saas.jpeg": "/static/media/saas.dea219f6a2e046995802.jpeg",
     "static/media/ecom.jpeg": "/static/media/ecom.5295b5ebdb27487b3591.jpeg",
+    "static/media/ecommerce.jpg": "/static/media/ecommerce.14082a023061755c256d.jpg",
     "static/media/2img.jpeg": "/static/media/2img.917a35509a154390e47e.jpeg",
     "static/media/1img.jpeg": "/static/media/1img.0b89ab992299e4427e08.jpeg",
+    "static/media/healthcare.jpg": "/static/media/healthcare.da7315c4e07b8c5e3c54.jpg",
     "static/media/logo.png": "/static/media/logo.14629bd07c0dd2076565.png",
     "index.html": "/index.html",
-    "main.9f66e4b2.css.map": "/static/css/main.9f66e4b2.css.map",
-    "main.8245726a.js.map": "/static/js/main.8245726a.js.map"
+    "main.f514259f.css.map": "/static/css/main.f514259f.css.map",
+    "main.9d64f345.js.map": "/static/js/main.9d64f345.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f66e4b2.css",
-    "static/js/main.8245726a.js"
+    "static/css/main.f514259f.css",
+    "static/js/main.9d64f345.js"
   ]
 }
