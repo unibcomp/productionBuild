@@ -1,0 +1,1 @@
+var e=`/assets/airtel2-QZJg5jez.png`,t=`/assets/vi2-BMu4Fguv.png`,n=`/assets/jio3-B5YR3UPH.png`,r=`/assets/bsnllogo-BXeyqKEi.png`;export{e as i,n,t as r,r as t};
