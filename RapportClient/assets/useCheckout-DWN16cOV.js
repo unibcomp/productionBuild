@@ -1,0 +1,1 @@
+import{T as e,X as t,Y as n}from"./index-DJbRwUrx.js";const r=()=>n({mutationFn:async t=>(await e.post(`/checkout`,t)).data.data}),i=n=>t({queryKey:[`checkout-session`,n],queryFn:async()=>(await e.get(`/checkout/${n}`)).data.data,enabled:!!n});export{r as n,i as t};
