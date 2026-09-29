@@ -1,0 +1,11 @@
+import{c}from"./createLucideIcon.uOSTbMo1.js";import{b as d,l as u}from"./index.CuoNwRmS.js";import{u as o}from"./useMutation.ds-mhn9i.js";import{a as w}from"./queryToast.CYWbJ6cx.js";import{e as r}from"./crypto.Dg2r1rm3.js";/**
+ * @license lucide-react v0.525.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const h=[["rect",{width:"20",height:"14",x:"2",y:"5",rx:"2",key:"ynyp8z"}],["line",{x1:"2",x2:"22",y1:"10",y2:"10",key:"1b3vmo"}]],b=c("credit-card",h);/**
+ * @license lucide-react v0.525.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const z=[["path",{d:"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3",key:"wmoenq"}],["path",{d:"M12 9v4",key:"juzpu7"}],["path",{d:"M12 17h.01",key:"p32p05"}]],F=c("triangle-alert",z),f=async t=>(await u.post("https://api.unibcomp.co.in/api/v1/user/payment/pay",{payment_session_id:t})).data,C=async t=>(await d.post("/check/deposit",{payment_session_id:t})).data,R=async t=>(await u.put(`https://api.unibcomp.in/api/v1/user/deposit/update/${t}`)).data,k=async t=>(await d.post("/payment/update",t)).data,I=()=>{const t=o({mutationFn:f}),e=o({mutationFn:C}),s=o({mutationFn:R}),a=o({mutationFn:k});return{depositRequestMutation:t,depositProcessMutation:e,depositStatusUpdateMutation:s,depositUpdate2:a}},P=()=>{const{depositUpdate2:t}=I();return{openRazorpayCheckout:({key:s,order_id:a,amount:p,currency:m,customer:i})=>{if(!window.Razorpay){alert("Razorpay SDK not loaded properly.");return}const y={key:s,order_id:a,amount:p*100,currency:m||"INR",name:"UnibComp",description:"Order Payment",prefill:{name:i?.name||"",email:i?.email||"",contact:i?.contact||""},theme:{color:"#3399cc"},handler:function(n){t.mutate({order_id:a,status:"SUCCESS",payment_id:n.razorpay_payment_id,signature:n.razorpay_signature});const l=r({amount:p,orderId:a,status:"success"});window.location.replace(`/payment-status/${encodeURIComponent(l)}`)},modal:{ondismiss:function(){t.mutate({order_id:a,status:"FAILED"},w(()=>window.location.replace("/")));const n=r({amount:p,orderId:a,status:"failed"});window.location.replace(`/payment-status/${encodeURIComponent(n)}`)}}};new window.Razorpay(y).open()}}};export{b as C,F as T,P as r,I as u};
