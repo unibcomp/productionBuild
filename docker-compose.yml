@@ -321,6 +321,14 @@ services:
     expose:
       - 80
 
+  confectionary-server:
+    build:
+      context: ../Confectionary/server
+    container_name: confectionary-server
+    ports:
+      - "5010:5010"
+    restart: always
+
   nginx:
     image: nginx:alpine
     container_name: reverse-proxy
@@ -349,6 +357,7 @@ services:
       - ./RapportClient:/var/www/rapportclient
       - ./RapportAdmin:/var/www/rapportadmin
       - ./RapportMr:/var/www/rapportmr
+      - ./FlonialFrontend:/var/www/flonial
     depends_on:
       - admin
       - user
@@ -361,3 +370,5 @@ services:
       - rapportclient
       - rapportadmin
       - rapportmr
+      - confectionary-server
+
