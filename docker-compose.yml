@@ -329,6 +329,14 @@ services:
       - "5010:5010"
     restart: always
 
+  multi-hrms-server:
+    build:
+      context: ../Multi_HRMS/Server
+    container_name: multi-hrms-server
+    ports:
+      - "4004:4004"
+    restart: always
+
   nginx:
     image: nginx:alpine
     container_name: reverse-proxy
@@ -371,4 +379,6 @@ services:
       - rapportadmin
       - rapportmr
       - confectionary-server
+      - multi-hrms-server
+
 
