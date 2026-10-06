@@ -376,4 +376,3 @@ services:
       - rapportmr
       - confectionary-server
       - multi-hrms-server
-      - hrmsSuperAdmin
