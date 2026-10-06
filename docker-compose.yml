@@ -290,6 +290,14 @@ services:
     container_name: hrms-server
     ports:
       - "4003:4003"
+    restart: always 
+
+  multi-hrms-server:
+    build:
+      context: ../Multi_HRMS/Server
+    container_name: multi-hrms-server
+    ports:
+      - "4004:4004"
     restart: always
      
    
@@ -327,15 +335,8 @@ services:
     container_name: confectionary-server
     ports:
       - "5010:5010"
-    restart: always
+    restart: always 
 
-  multi-hrms-server:
-    build:
-      context: ../Multi_HRMS/Server
-    container_name: multi-hrms-server
-    ports:
-      - "4004:4004"
-    restart: always
 
   nginx:
     image: nginx:alpine
@@ -358,6 +359,9 @@ services:
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
       - ./AmbelTradeFrontend:/var/www/ambeltrade
+
+
+      - ./hrmsSuperAdmin:/var/www/hrmsSuperAdmin
       - ./adminhrms:/var/www/adminhrms
       - ./clienthrms:/var/www/clienthrms
       - ./hrmsvisitor:/var/www/hrmsvisitor
