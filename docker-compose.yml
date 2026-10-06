@@ -13,7 +13,7 @@
 #       - ./PayinPayoutAdmin:/usr/share/nginx/html
 #     expose:
 #       - 80
-  
+
 #   user:
 #     image: nginx:alpine
 #     container_name: user
@@ -171,8 +171,6 @@
 #       # - devuser
 #       # - devadmin
 
-
-
 services:
   admin:
     image: nginx:alpine
@@ -272,8 +270,6 @@ services:
     depends_on:
       - wrapping
 
-
-      
   bankmudra-server:
     build:
       context: ../merchant-backend
@@ -290,7 +286,7 @@ services:
     container_name: hrms-server
     ports:
       - "4003:4003"
-    restart: always 
+    restart: always
 
   multi-hrms-server:
     build:
@@ -299,8 +295,6 @@ services:
     ports:
       - "4004:4004"
     restart: always
-     
-   
 
   rapport-server:
     build:
@@ -309,7 +303,7 @@ services:
     ports:
       - "5000:5000"
     restart: always
-      
+
   server:
     build:
       context: ../PayinPayout/Backend
@@ -335,8 +329,7 @@ services:
     container_name: confectionary-server
     ports:
       - "5010:5010"
-    restart: always 
-
+    restart: always
 
   nginx:
     image: nginx:alpine
@@ -359,7 +352,6 @@ services:
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
       - ./AmbelTradeFrontend:/var/www/ambeltrade
-
 
       - ./hrmsSuperAdmin:/var/www/hrmsSuperAdmin
       - ./adminhrms:/var/www/adminhrms
@@ -384,5 +376,4 @@ services:
       - rapportmr
       - confectionary-server
       - multi-hrms-server
-
-
+      - hrmsSuperAdmin
