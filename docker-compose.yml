@@ -280,6 +280,14 @@ services:
     depends_on:
       - bankmudrauser
 
+  dev-bankmudra-server:
+    build:
+      context: ../dev-merchant-backend
+    container_name: dev-bankmudra-server
+    ports:
+      - "3201:3200"
+    restart: always
+
   hrms-server:
     build:
       context: ../HRMS/Server
