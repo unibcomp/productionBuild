@@ -236,6 +236,14 @@ services:
     expose:
       - 80
 
+  devbankmudraadmin:
+    image: nginx:alpine
+    container_name: devbankmudraadmin
+    volumes:
+      - ./dev/AdminBankMudraa:/usr/share/nginx/html
+    expose:
+      - 80
+
   rapportclient:
     image: nginx:alpine
     container_name: rapportclient
@@ -359,6 +367,7 @@ services:
       - ./NewEcom/Vendor:/var/www/newEcomVendor
       - ./NewEcom/User:/var/www/newEcomUser
       - ./dev/BankMudra:/var/www/devbankmudra
+      - ./dev/AdminBankMudraa:/var/www/devbankmudraadmin
       - ./AmbelTradeFrontend:/var/www/ambeltrade
 
       - ./hrmsSuperAdmin:/var/www/hrmsSuperAdmin
@@ -384,3 +393,5 @@ services:
       - rapportmr
       - confectionary-server
       - multi-hrms-server
+      - devbankmudrauser
+      - devbankmudraadmin
