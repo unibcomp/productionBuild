@@ -1,0 +1,1 @@
+import{i as e,n as t,r as n,t as r}from"./index-DihNwhyW.js";var i={airtel:n,bsnl:r,jio:e,vi:t};const a=(e=``)=>{let t=e.trim().toLowerCase();if(t.includes(`airtel`))return i.airtel;if(t.includes(`bsnl`))return i.bsnl;if(t.includes(`jio`))return i.jio;if(t===`vi`||t.includes(`vodafone`)||t.includes(`idea`))return i.vi};export{a as t};

@@ -1,0 +1,1 @@
+import{i as e,n as t,r as n,t as r}from"./bsnllogo-3-W7IplU.js";const i=(i=``)=>{let a=i.trim().toLowerCase();if(a.includes(`airtel`))return e;if(a.includes(`bsnl`))return r;if(a.includes(`jio`))return t;if(a===`vi`||a.includes(`vodafone`)||a.includes(`idea`))return n};export{i as t};

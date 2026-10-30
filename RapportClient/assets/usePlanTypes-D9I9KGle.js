@@ -1,0 +1,1 @@
+import{Et as e,nt as t}from"./index-D-Kl7jMl.js";const n=()=>e({queryKey:[`plan-types`],queryFn:async()=>(await t.get(`/plan-types`)).data.data});export{n as t};

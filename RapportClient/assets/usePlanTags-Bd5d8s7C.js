@@ -1,0 +1,1 @@
+import{et as e,wt as t}from"./index-fFsIZwew.js";const n=()=>t({queryKey:[`plan-tags`],queryFn:async()=>(await e.get(`/plan-tags`)).data.data});export{n as t};

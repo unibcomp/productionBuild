@@ -1,0 +1,1 @@
+import{et as e,nt as t,wt as n}from"./index-CHkaNcrL.js";const r=()=>n({queryKey:[`user-details`],queryFn:async()=>(await e.get(`/user-details`)).data.data,enabled:!!t(),staleTime:300*1e3,refetchOnWindowFocus:!1});export{r as t};
