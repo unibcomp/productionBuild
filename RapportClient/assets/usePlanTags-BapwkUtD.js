@@ -1,0 +1,1 @@
+import{Ot as e,nt as t}from"./index-vJa32OLj.js";const n=()=>e({queryKey:[`plan-tags`],queryFn:async()=>(await t.get(`/plan-tags`)).data.data});export{n as t};

@@ -1,0 +1,1 @@
+import{Ot as e,nt as t}from"./index-vJa32OLj.js";const n=n=>e({queryKey:[`plans`,n],queryFn:async()=>(await t.get(`/esim/plans`,{params:n})).data.data,enabled:!!n?.country}),r=n=>e({queryKey:[`plan`,n],queryFn:async()=>(await t.get(`/esim/plans/${n}`)).data.data,enabled:!!n});export{n,r as t};
